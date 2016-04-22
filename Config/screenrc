@@ -1,0 +1,5 @@
+startup_message off
+vbell off
+defscrollback 90000
+
+shell -$SHELL
