@@ -1,21 +1,8 @@
-/* currently, this needs to be run on the year-month branch of warcbase - skipped CIRCUMPOLAR*/
+/* now running on errorlogs branch of warcbase */
+/* BROKEN WARC FILE IN GOVERNMENT_INFORMATION - logging enabled */
 
 import org.warcbase.spark.matchbox._ 
 import org.warcbase.spark.rdd.RecordRDD._ 
-
-val elxn42 = 
-  RecordLoader.loadArchives("/data/elxn42/*.gz", sc) 
-  .keepValidPages() 
-  .map(r => (r.getCrawlMonth, ExtractDomain(r.getUrl))) 
-  .countItems() 
-  .saveAsTextFile("/data/derivatives/urls/elxn42")
-
-val energy_environment = 
-  RecordLoader.loadArchives("/data/energy_environment/*.gz", sc) 
-  .keepValidPages() 
-  .map(r => (r.getCrawlMonth, ExtractDomain(r.getUrl))) 
-  .countItems() 
-  .saveAsTextFile("/data/derivatives/urls/energy_environment")
 
 val government_information = 
   RecordLoader.loadArchives("/data/government_information/*.gz", sc) 
