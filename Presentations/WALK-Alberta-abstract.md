@@ -19,7 +19,7 @@ Libraries and archives are perfectly positioned to work in this new
 emerging field that brings together historians, computer scientists, and 
 information specialists. In our talk, we discuss the fruits of one 
 collaboration that has emerged at York University, the University of 
-Waterloo, and the University of Waterloo. Bringing together librarians, historians, and computer scientists, as well asan interdisciplinary team of undergraduate and graduate 
+Alberta, and the University of Waterloo. Bringing together librarians, historians, and computer scientists, as well as an interdisciplinary team of undergraduate and graduate 
 students, we are developing several web archival analytics projects. 
 
 We work using a combination of 
@@ -28,6 +28,6 @@ store web archives, provide a publicly-facing portal
 (<http://webarchives.ca/>), and to collaborate using Slack. We’ll discuss the challenges of working in an 
 interdisciplinary environment, and give insights into how the team has 
 been working through in-detail case studies of our work with 
-<http://webarchives.ca> and the warcbase web analytics platform. The 
+<http://webarchives.ca>, Twitter archiving and analysis, the Compute Canada cloud, and the warcbase web analytics platform. The 
 combination of computer scientists and humanists is not always a simple 
 one, but it has proven to be worthwhile.
