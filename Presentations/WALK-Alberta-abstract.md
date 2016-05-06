@@ -25,9 +25,9 @@ students, we are developing several web archival analytics projects.
 We work using a combination of 
 centralized and de-centralized infrastructure to run data analytics, 
 store web archives, provide a publicly-facing portal 
-(<http://webarchives.ca/>), and to collaborate using Slack. We’ll discuss the challenges of working in an 
+(<http://webarchives.ca/>), and collaborate using Slack. We’ll discuss the challenges of working in an 
 interdisciplinary environment, and give insights into how the team has 
 been working through in-detail case studies of our work with 
-<http://webarchives.ca>, Twitter archiving and analysis, the Compute Canada cloud, and the warcbase web analytics platform. The 
+<http://webarchives.ca>, Twitter archiving and analysis, Compute Canada, and warcbase, a web analytics platform. The 
 combination of computer scientists and humanists is not always a simple 
 one, but it has proven to be worthwhile.
