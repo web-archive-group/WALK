@@ -1,0 +1,11 @@
+
+collection1 = ["google", "apple", "microsoft", "msn"]
+collection2 = ["google", "pear", "thebeatles", "thepogues", "napster", "apple"]
+collection3 = ["google", "apple", "msn", "skunk", "beaver", "wolf"]
+collection4 = ["apple", "jump", "walk", "run", "saunter", "skunk", "napster"]
+collection5 = ["pear", "wolf", "jive", "tango"]
+
+one_collect = [collection1]
+two_collect = [collection1, collection2]
+three_collect = [collection1, collection2, collection3]
+all_collect = [collection1, collection2, collection3, collection4, collection5]
