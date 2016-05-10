@@ -3,6 +3,5 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
-alias sparkshell='/home/ubuntu/git/spark-1.5.1-bin-hadoop2.6/bin/spark-shell --driver-memory 50G --jars /home/ubuntu/git/warcbase/target/warcbase-0.1.0-SNAPSHOT-fatjar.jar'
+alias sparkshell='/home/ubuntu/project/spark-1.5.1-bin-hadoop2.6/bin/spark-shell --driver-memory 50G --jars /home/ubuntu/project/warcbase/target/warcbase-0.1.0-SNAPSHOT-fatjar.jar'
 alias buildwarcbase='mvn clean package appassembler:assemble -DskipTests'
-
