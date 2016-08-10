@@ -1,0 +1,496 @@
+CPP 201511,Sum of Frequency
+Canada,372903
+Toronto,49388
+United States,37597
+Ottawa,35706
+Ontario,35522
+Israel ,21625
+Montreal,19395
+Quebec,16709
+Vancouver,15482
+Benevolat Faire ,14364
+British Columbia,14130
+Alberta,12408
+Manitoba ,11243
+Iraq ,11023
+Paris ,9649
+Syria,8302
+Saskatchewan ,7347
+Winnipeg,6958
+Alberta British Columbia Manitoba New Brunswick Newfoundland ,6921
+Territories Nova Scotia Nunavut,6910
+Jordan ,6496
+Europe ,6154
+China,5935
+Nova Scotia,5622
+Egypt ,5318
+Australia ,5070
+United Kingdom,4360
+Saudi Arabia ,4199
+New Brunswick ,3885
+Iran ,3863
+Hawaiian ,3743
+Russia ,3737
+Halifax,3728
+Afghanistan ,3533
+Greece ,3462
+India ,3161
+London ,3120
+Cana ,3116
+Bahrain ,2977
+North America ,2839
+New York,2838
+Newfoundland,2828
+Washington,2804
+Atlantic ,2771
+Libya ,2702
+France ,2652
+Mexico ,2591
+Edmonton,2405
+Calgary,2346
+Gulf Islands ,2272
+Copenhagen ,2111
+Saskatoon,2106
+European Union,1978
+Rome ,1913
+Victoria,1881
+Africa ,1866
+America ,1797
+Gaza ,1734
+Saanich ,1637
+Burnaby ,1623
+Pakistan ,1610
+West Coast ,1585
+Ukraine ,1569
+Guelph ,1568
+Germany ,1568
+Japan ,1532
+Yemen ,1529
+Pacific Ocean ,1417
+Haiti ,1408
+Kyoto ,1358
+Sydney,1350
+Palestine ,1325
+Fredericton ,1307
+Nairobi,1286
+South Africa ,1281
+Brazil ,1265
+Sudan ,1258
+Peterborough ,1243
+Geneva ,1212
+Hamilton,1193
+Colombia ,1157
+Britain ,1154
+Middle East ,1124
+Moncton ,1106
+Powell River ,1102
+Turkey ,1101
+Chicago ,1088
+Asia ,1085
+Nanaimo ,1047
+Gatineau ,1042
+Detroit,1034
+Pacific ,1016
+Earth ,995
+California ,983
+Sudbury,981
+Richmond ,957
+Reddit ,906
+Syriza ,896
+Cuba ,882
+American ,881
+Venezuela ,879
+Sri Lanka ,868
+Norway ,864
+Nunavut ,846
+Muenster,843
+Cowichan Valley ,837
+Tunisia ,837
+Athens,802
+Guantanamo ,783
+Latin America ,783
+Labrador ,781
+Seattle ,779
+Black Sea ,778
+Vancouver Island ,777
+Scotland ,767
+Taiwan ,766
+Chile ,749
+Kamloops ,746
+Cancun,742
+Cairo ,737
+MIssissauga,735
+Russian ,724
+Fraser River ,723
+Wellington ,716
+Lac Megantic,715
+Atlantic Canada,702
+Whitehorse ,701
+Somalia ,700
+Great Lakes ,697
+Kelowna ,696
+Sweden ,688
+Hungary ,681
+Waterloo ,680
+Salish Sea ,677
+Yellowknife ,661
+Beijing,659
+Leeds ,648
+Texas,629
+Windsor ,620
+Italy ,616
+St.Lawrence River ,613
+West ,607
+New Zealand ,600
+Charlottetown ,589
+Richtree ,574
+Quebec City ,570
+Nigeria ,569
+Michigan ,566
+Fort McMurray ,558
+Houston,557
+Creek ,556
+Hillsborough River ,553
+Israeli ,550
+Kanata ,542
+Northumberland ,541
+"Quebec, Ontario",540
+Tar Sands ,539
+Palestinian ,523
+Moscow ,523
+Zimbabwe ,519
+Kingston,517
+Ireland ,517
+Cyprus ,517
+Vietnam ,516
+"Manchester , Englan",515
+Bolivia ,511
+Langley ,511
+Hong Kong ,510
+Comox Valley ,507
+Guatemala ,507
+Peru ,505
+Brampton ,504
+"West Waterloo , ",497
+Kenya ,494
+Mediterranean ,493
+South Shore ,490
+Philippines ,489
+Inverness County ,486
+Americas ,483
+Honduras ,482
+White Rock ,480
+Saudi ,479
+Brockville ,472
+Brussels ,469
+Northwest Territori,466
+Egyptian ,465
+Burrard ,460
+Hudson ,454
+England ,449
+Kent County ,439
+Rwanda ,438
+Sarnia ,437
+El Salvador ,436
+North American ,436
+supra ,434
+Ghana ,432
+Jersey ,424
+South Niagara ,423
+North Shore ,417
+Safe Harbour ,412
+Parliament Hill ,409
+Spain ,409
+Portand ,407
+Outaouais ,400
+Wisconsin,396
+Canada Cyprus ,394
+John Bahrain ,392
+Quill Plains ,391
+"West Kootenays , ",390
+Durban ,390
+ONTARIO Brant Count,387
+Gottingen Street Ha,387
+West Hastings St. V,387
+Stony Plain Road Ed,387
+Arctic ,387
+Anita Strong ,387
+Mississippi Mills ,387
+shaw.ca Port Albern,386
+COLUMBIA Campbell R,386
+"Westman , ",386
+Island Charlottetow,386
+New Brunswick Frede,386
+Lima ,383
+Yemeni ,365
+Lebanon ,365
+Selma ,362
+Argentina ,359
+Taipei ,358
+Berlin ,357
+Congo ,353
+Cochabamba ,345
+Iraqi ,341
+Doha,340
+Mother Earth ,334
+Canada Log ,330
+Longueuil ,328
+Kronstadt ,328
+Cape Breton ,318
+Uganda ,314
+Indonesia ,312
+Netherlands ,311
+Canadian ,310
+South Korea ,310
+Kosovo ,302
+Los Angeles,288
+Caribbean ,287
+Peace River ,286
+Eritrea ,279
+Western Canada ,279
+Denmark ,278
+Georgia ,275
+Thailand ,275
+Greenbelt ,274
+Canadian Centre ,273
+Nicaragua ,273
+Finland ,270
+Gulf of St. Lawrenc,269
+"London, Ontario",267
+Soviet Union ,262
+St.Lawrence ,260
+North Korea ,260
+Gulf of Mexico ,255
+Bahraini ,253
+North Vancouver ,252
+French ,252
+Thunder Bay ,251
+Tilton Lake ,250
+Bangladesh ,248
+Ecuador ,248
+San Francisco ,247
+Great Slave Lake ,246
+Damascus ,245
+Mayne Island ,244
+Prince Edward Islan,244
+Kitchener ,243
+Boston ,241
+Campbell River ,239
+Saanich Inlet ,238
+Uruguay ,238
+Joliette ,237
+Oshawa ,235
+Haida Gwaii ,235
+New Westminster ,234
+Alaska ,234
+Cambridge,232
+Pune ,231
+St. John River ,231
+Mexico City ,230
+"Canada, United States",229
+Gurgaon ,229
+Burma ,227
+Authentic Jersey ,227
+Anquan Boldin Jerse,227
+Bishop Sankey Jerse,227
+Taiwan Andre Johnso,227
+Antonio Cromartie J,227
+Mali ,223
+Burundi ,222
+Athabasca ,222
+Burlington ,218
+British ,218
+Asian ,218
+Nigerian ,216
+Sun Sea ,216
+Rio Tinto ,216
+Perth ,215
+Poland ,213
+Abbotsford ,212
+Korea ,212
+Mardi ,211
+Surrey ,210
+Ethiopia ,210
+Burnaby Mountain ,209
+"Albert St. Ottawa ,",209
+Oakville ,207
+Leamington ,206
+Loly Rico ,206
+Lethbridge ,202
+Belleville ,200
+Turkmenistan ,200
+P.C. ,197
+Portugal ,197
+Bangkok ,194
+Asia Rick Nash Jers,192
+Costa Rica ,192
+Ryan McDonagh Authe,192
+Valtteri Filppula J,192
+Switzerland ,191
+Islamophobia ,190
+Inner City ,190
+Kenora ,189
+Belgium ,188
+South America ,187
+Pacific Northwest ,187
+Turtle Island ,186
+Austria ,183
+Cuban ,182
+Etobicoke,182
+Mozambique ,180
+South ,179
+Hollywood ,178
+Colombian ,177
+Warsaw,177
+Lake Ontario ,177
+Paraguay ,177
+Markham ,177
+Mount Polley ,176
+Squamish ,172
+Atlantica ,172
+Iqaluit,171
+Pacific Rim ,170
+Czech Republic ,169
+Qatar ,169
+Niagara Falls ,169
+Lake Huron ,167
+Prairies ,167
+Richmond Hill ,167
+Chicoutimi ,165
+PRRA ,165
+Tahrir ,163
+Sault ,161
+Rio ,161
+Sidney ,160
+Thames River ,159
+Regina,158
+Panama ,157
+Syria Our Team ,157
+Pennsylvania,156
+West Vancouver ,155
+Algeria ,150
+Maine ,149
+Sochi,148
+Kandahar ,148
+Colvert Le Canada ,147
+Amazon ,147
+Attawapiskat ,145
+Nepean ,145
+York ,145
+Diwali ,145
+Florida,145
+Vermont ,144
+Bhutan ,144
+Guantanamo Bay ,142
+Gulf ,141
+Nebraska ,140
+Cambodia ,140
+Indonesian ,139
+Elora,139
+AFRICOM ,139
+Ankara ,139
+Egale Canada,138
+Cacouna,138
+Dublin ,138
+Bay Street ,138
+Morocco ,138
+Nepal ,138
+Westmount ,136
+United Arab Emirate,135
+Pacific Coast ,134
+Qatif,134
+Portland ,134
+Esquimalt ,133
+Tyendinaga ,133
+BQ ,133
+Riverview ,133
+North ,132
+Johannesburg ,131
+Laval ,131
+West Bank ,130
+"Iraq, United States",130
+Ouest ,130
+North Bay ,129
+United Arab Emirates,128
+Whistler ,128
+Yugoslavia ,128
+Malaysia ,127
+Palestinians ,127
+Burrard Inlet ,127
+Lachine ,125
+Aurora,125
+Baghdad ,124
+Rio de Janeiro ,124
+Durham ,124
+New Delhi,123
+Hawaii ,123
+Green ,121
+Kuwait ,121
+Fort York ,121
+Liberia ,121
+Kalamazoo River ,120
+Bali ,120
+Great Lakes Basin ,120
+Spadina ,120
+North Pacific Coast,119
+Kurdistan ,119
+Rimouski ,118
+Brandon,117
+Cornwall ,117
+Vaisakhi ,117
+Portage ,116
+Maurice ,116
+Central Asia,116
+Beauport ,116
+Beauce ,116
+Colorado,116
+European ,115
+Indiana ,115
+Tahrir Square ,114
+Jerusalem ,114
+Hiroshima ,113
+North Dakota,113
+Atlantic Coast ,113
+Kalamazoo ,113
+Greenland ,113
+Niagara,113
+Darfur ,112
+Central America ,112
+Eastern Europe ,112
+Minnesota ,112
+Muskoka ,111
+Assiniboia ,111
+Athabasca River ,110
+Eastern Canada ,110
+Zaire ,110
+Angola ,109
+Kobani,109
+Koban’Û¬ê’äÎé Canton ,108
+Syrie ,108
+Toronto Log ,108
+Fraser Valley ,108
+Sunshine Coast ,107
+Rosedale ,107
+Thousand Islands ,107
+Lelu Island ,107
+Atlanta ,107
+North Atlantic ,106
+Nunavik ,106
+Ontario Public Service Employees Union ,105
+Walkerton ,104
+Romania ,104
+Beaufort Sea ,103
+Huntsville ,102
+St. James ,102
+Vienna ,101
+Wales ,101
+Brantford ,101
+Ancaster ,101
+Sherbrooke ,101
+Bay of Fundy ,101
+Turkish ,100
+Chinese ,100
+Illinois ,100
+Souris ,99
+New Orleans ,99
+Yusur Al Bahrani Ba,99
