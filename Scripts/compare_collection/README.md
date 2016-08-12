@@ -1,8 +1,10 @@
-# Comparing Collections with Count
+# Comparing Web Archival Collections with Count
+
+This is a rough draft of some documentation (we're using this for scholarly research right now, so it'll change as we actually do test cases and beyond). Between this and the well-commented Jupyter notebook file, you should be good. If not, please feel free to open an issue. 
 
 ## Installation
 
-Clone this repo, or simply [download the iPython notebook found here](https://github.com/web-archive-group/WALK/tree/master/Scripts/compare_collection). 
+Clone this repo, or simply [download the Jupyter notebook found here](https://github.com/web-archive-group/WALK/tree/master/Scripts/compare_collection). 
 
 This was tested using [anaconda](https://anaconda.org/). Base packages are installed, but you will need to install `mca` and `matplotlib_venn`. On OS X, we used `pip`:
 
