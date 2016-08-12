@@ -1,6 +1,6 @@
 # Comparing Web Archival Collections with Count
 
-Code primarily developed by [Ryan Deschamps](https://uwaterloo.ca/web-archive-group/people-profiles/ryan-deschamps), a research assistant with the [Web Archives for Historial Research Group(https://uwaterloo.ca/web-archive-group/), in collaboration with [Ian Milligan](https://ianmilligan.ca/).
+Code primarily developed by [Ryan Deschamps](https://uwaterloo.ca/web-archive-group/people-profiles/ryan-deschamps), a research assistant with the [Web Archives for Historial Research Group](https://uwaterloo.ca/web-archive-group/), in collaboration with [Ian Milligan](https://ianmilligan.ca/).
 
 This is a rough draft of some documentation (we're using this for scholarly research right now, so it'll change as we actually do test cases and beyond). Between this and the well-commented Jupyter notebook file, you should be good. If not, please feel free to open an issue. 
 
