@@ -2,6 +2,14 @@
 
 This is a rough draft of some documentation (we're using this for scholarly research right now, so it'll change as we actually do test cases and beyond). Between this and the well-commented Jupyter notebook file, you should be good. If not, please feel free to open an issue. 
 
+What this allows you to do is take collections and see the overlap between them: what domains do they share, what ones do not. If you use more than three collections, rather than the Venn diagram it generates a correspondence analysis. Our goal is that this might help you in collections development, or just plain ol' figuring out what you have in a collection. 
+
+![Screenshot 1](https://raw.githubusercontent.com/web-archive-group/WAHR/master/images/Compare1.png)
+
+![Screenshot 2](https://raw.githubusercontent.com/web-archive-group/WAHR/master/images/Compare2.png)
+
+![Screenshot 3](https://raw.githubusercontent.com/web-archive-group/WAHR/master/images/Compare3.png)
+
 ## Installation
 
 Clone this repo, or simply [download the Jupyter notebook found here](https://github.com/web-archive-group/WALK/tree/master/Scripts/compare_collection). 
