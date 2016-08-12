@@ -1,5 +1,7 @@
 # Comparing Web Archival Collections with Count
 
+Code primarily developed by [Ryan Deschamps](https://uwaterloo.ca/web-archive-group/people-profiles/ryan-deschamps), a research assistant with the [Web Archives for Historial Research Group(https://uwaterloo.ca/web-archive-group/), in collaboration with [Ian Milligan](https://ianmilligan.ca/).
+
 This is a rough draft of some documentation (we're using this for scholarly research right now, so it'll change as we actually do test cases and beyond). Between this and the well-commented Jupyter notebook file, you should be good. If not, please feel free to open an issue. 
 
 What this allows you to do is take collections and see the overlap between them: what domains do they share, what ones do not. If you use more than three collections, rather than the Venn diagram it generates a correspondence analysis. Our goal is that this might help you in collections development, or just plain ol' figuring out what you have in a collection. 
@@ -64,3 +66,7 @@ loc_path = "../../NER/"
 Change this to the directory with your NER output.
 
 Everything else should be described in comments.
+
+## Acknowlegements
+
+Support for this project comes from an [Ontario Ministry of Research and Innovation Early Researcher Award](https://uwaterloo.ca/web-archive-group/news/ontario-early-researcher-award-announced) and a [Compute Canada Research Platforms and Portals award](https://uwaterloo.ca/web-archive-group/news/compute-canada-grant-web-archives-longitudinal-knowledge).
