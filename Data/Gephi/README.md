@@ -1,6 +1,26 @@
 # Gephi Files
 
-The GDF file format is supported by network analysis software, including Gephi. Here's a brief walkthrough.
+The GDF file format is supported by network analysis software, including Gephi. It was created using [warcbase](http://warcbase.org), [specifically this script run on the WALK server](https://github.com/web-archive-group/WALK/blob/master/Scripts/160711-GephiExtractor.scala). An example of what this code looks like:
+
+```scala
+import org.warcbase.spark.matchbox._ 
+import org.warcbase.spark.rdd.RecordRDD._ 
+
+val alberta_education_curriculum = 
+  RecordLoader.loadArchives("/data/alberta_education_curriculum/*.gz", sc) 
+  .keepValidPages()
+  .map(r => (r.getCrawlDate, ExtractLinks(r.getUrl, r.getContentString)))
+  .flatMap(r => r._2.map(f => (r._1, ExtractDomain(f._1).replaceAll("^\\s*www\\.", ""), ExtractDomain(f._2).replaceAll("^\\s*www\\.", ""))))
+  .filter(r => r._2 != "" && r._3 != "")
+  .countItems()
+  .filter(r => r._2 > 5) 
+  
+WriteGDF(alberta_education_curriculum, "/data/derivatives/gephi/alberta_education_curriculum.gdf")
+```
+
+The above took the Alberta Education Curriculum, found the links between domains, and wrote them as a GDF file.
+
+Here's a brief walkthrough of how to actually use the files using Gephi.
 
 ## Step-by-Step Walkthrough
 
