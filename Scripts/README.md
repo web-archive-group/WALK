@@ -1,6 +1,6 @@
 # Scripts
 
-These scripts are the warcbase processing scripts.
+These scripts are the warcbase processing scripts. They are currently designed to run on the WALK server, but they would work elsewhere (you would need to change paths in both files).
 
 `template.scala` is the scala template, can be modified based on use. Right now, it generates the following derivatives:
 - domains by count;
