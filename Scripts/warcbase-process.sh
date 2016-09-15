@@ -6,7 +6,7 @@
 sed -e "s/\${COLLECTION}/$1/g" template.scala > $1.scala
 
 # execute in Spark Shell
-/home/ubuntu/project/spark-1.6.1-bin-hadoop2.6/bin/spark-shell -i /home/ubuntu/production/$1.scala --driver-memory 55G --jars /home/ubuntu/project/warcbase/warcbase-core/target/warcbase-core-0.1.0-SNAPSHOT-fatjar.jar
+/home/ubuntu/project/spark-1.6.1-bin-hadoop2.6/bin/spark-shell -i /home/ubuntu/production/$1.scala --driver-memory 55G --jars /home/ubuntu/project/warcbase/warcbase-core/target/warcbase-core-0.1.0-SNAPSHOT-fatjar.jar | tee /home/ubuntu/production/$1.log
 
 # combine part files, move to directory
 cat /data/derivatives/fullurls/$1/part* > $1-fullurls.txt
@@ -25,4 +25,6 @@ cat /data/derivatives/text/$1/part* > $1-text.txt
 mv $1-text.txt /data/derivatives/text
 #rm -rf /data/derivatives/text/$1/
 
-# let's remove part files manually, on second thought
+# let's remove part files manually
+# TORONTO_snowden_archive
+
