@@ -1,0 +1,25 @@
+nodedef> name VARCHAR
+docs.google.com
+coppuldpwg.wordpress.com
+lib-general.lib.sfu.ca
+coppuldpwg.files.wordpress.com
+wordpress.com
+lockss.org
+contentdm.org
+lds3.org
+deepblue.lib.umich.edu
+github.com
+archive-it.org
+edgedef> source VARCHAR, target VARCHAR, weight DOUBLE, timeint VARCHAR
+coppuldpwg.wordpress.com,coppuldpwg.wordpress.com,4720,20151002
+coppuldpwg.wordpress.com,wordpress.com,567,20151002
+coppuldpwg.wordpress.com,coppuldpwg.files.wordpress.com,41,20151002
+coppuldpwg.wordpress.com,lockss.org,26,20151002
+coppuldpwg.wordpress.com,lib-general.lib.sfu.ca,24,20151002
+coppuldpwg.wordpress.com,github.com,10,20151002
+coppuldpwg.wordpress.com,archive-it.org,8,20151002
+coppuldpwg.wordpress.com,contentdm.org,8,20151002
+wordpress.com,wordpress.com,6,20151002
+coppuldpwg.wordpress.com,deepblue.lib.umich.edu,6,20151002
+coppuldpwg.wordpress.com,lds3.org,6,20151002
+coppuldpwg.wordpress.com,docs.google.com,6,20151002
