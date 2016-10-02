@@ -3,11 +3,11 @@ import numpy as np
 from matplotlib_venn import venn2, venn3
 import mca
 import matplotlib.pyplot as plt
+from collections import defaultdict
 
 ###################################
 ## The main class
 ###################################
-
 
 class Compare:
     """ 
@@ -22,24 +22,34 @@ class Compare:
         scores.
     
     Parameters: 
-        collections (required):  A list of lists or a dict() of size 2 or greater for comparison purposes. 
-        names:  An optional list of names for the collections.  Must be equal in size to collections. If collections is 
+        @collections (required):  A list of lists or a dict() of size 2 or greater for comparison purposes. 
+        @names:  An optional list of names for the collections.  Must be equal in size to collections. If collections is 
             a dict, this parameter will be overwritten.
-        index:  A list of index keys to create a sublist for the collections.
-        var: An optional list for further categorization of the collection data (not fully implemented yet).
-        REMOVE_SINGLES: (Default:True) For 4 collections or more, remove from the analysis any data points that are
+        @index:  A list of index keys to create a sublist for the collections.
+        @var: An optional list for further categorization of the collection data (not fully implemented yet).
+        @REMOVE_SINGLES: (Default:True) For 4 collections or more, remove from the analysis any data points that are
             members of only one collection. This reduces the chance that a disproportionately large collection
             will be seen as an outlier merely because it is disproportionately large.
+        @DIM3: either 2 or 3 - # of dimensions to visualize (2D or 3D)
+        LABEL_BOTH_FACTORS: whether to use two factors in results (default to just one).
             
     """
     
-    def __init__ (self, collections, names=[], index=[], var=[], REMOVE_SINGLES=True, LABEL_BOTH_FACTORS=False):
+    def __init__ (self, collections, names=[], index=[], var=[], REMOVE_SINGLES=True, DIM3=False, LABEL_BOTH_FACTORS=False):
         self.collection_names = names
         self.index = index
         self.collections = collections
         self.REMOVE_SINGLES = REMOVE_SINGLES
+        if DIM3 == True:
+            self.DIMS = 3
+        else:
+            self.DIMS = 2
         self.LABEL_BOTH_FACTORS = LABEL_BOTH_FACTORS
         self.dimensions = None
+        self.result = {}
+        self.clabels = []
+        self.rlabels = []
+        self.plabels = []
         #self.cur_depth = self.recur_len(self.collections)
         if isinstance(self.collections, dict):
             # print("dict passed")
@@ -77,13 +87,15 @@ class Compare:
                 self.ca = self.ca(self.collections, self.collection_names)
             else:
                 self.no_compare()
+                
     def recur_len(self, L):
-        return sum(L + recur_len(item) if isinstance(item,list) else L for item in L)   
+        return sum(L + recur_len(item) if isinstance(item, list) else L for item in L)   
     def no_compare(self):
         return ("Need at least two collections to compare results.")
     #get a sublist from a list of indices
     def sublist (self, list1, list2):
-        return([list1[x] for x in list2])        
+        return([list1[x] for x in list2]) 
+    
     #get set of all items (unduplicated)
     def unionize (self, sets_list):
         return set().union(*sets_list)
@@ -120,27 +132,48 @@ class Compare:
         self.response = df.T
         counts = mca.mca(df)
         self.dimensions = counts.L
+        print(self.dimensions)
         data = pd.DataFrame(columns=df.index, index=pd.MultiIndex
                       .from_product([[fs, cos, cont], range(1, 3)]))
-        data.loc[fs,    :] = counts.fs_r(N=2).T
-        points = data.loc[fs].values
-        urls = counts.fs_c(N=2).T
-        clabels = data.columns.values
-        plt.figure(figsize=(10,10))
-        plt.margins(0.1)
-        plt.axhline(0, color='gray')
-        plt.axvline(0, color='gray')
-        plt.xlabel('Factor 1 (' + str(round(self.dimensions[0], 3)*100) + '%)') 
-        plt.ylabel('Factor 2 (' + str(round(self.dimensions[1], 3)*100) + '%)')
-        plt.scatter(*points,  s=120, marker='o', c='r', alpha=.5, linewidths=0)
-        plt.scatter(*urls,  s=120, marker='s', c='b', alpha=.5, linewidths=0)
-        for label, x, y in zip(clabels, *points):
-            plt.annotate(label, xy=(x, y), xytext=(x + .03, y + .03))
-        if self.LABEL_BOTH_FACTORS:
-            rlabels = df.T.index
-            for label, x, y in zip(rlabels, *urls):
+        self.result["rows"] = counts.fs_r(N=self.DIMS).T
+        self.result["columns"] = counts.fs_c(N=self.DIMS).T
+            #self.result["df"] = data.T[fs].add(noise).groupby(level=['Collection'])
+        #data.loc[fs,    :] = counts.fs_r(N=self.DIMS).T
+        points = self.result["rows"]
+        urls = self.result["columns"]
+        if self.DIMS == 3:
+            clabels = data.columns.values
+            fig = plt.figure(figsize=(10,10))
+            ax = fig.add_subplot(111, projection='3d')
+
+            plt.margins(0.1)
+            plt.axhline(0, color='gray')
+            plt.axvline(0, color='gray')
+            ax.set_xlabel('Factor 1 (' + str(round(self.dimensions[0], 3)*100) + '%)') 
+            ax.set_ylabel('Factor 2 (' + str(round(self.dimensions[1], 3)*100) + '%)')
+            ax.set_zlabel('Factor 3 (' + str(round(self.dimensions[2], 3)*100) + '%)')
+        
+            ax.scatter(*points,  s=120, marker='o', c='r', alpha=.5, linewidths=0)
+            ax.scatter(*urls, s=120, marker='s', c='b', alpha=.5, linewidths=0)
+            for clabel, x, y, z in zip(clabels, *points):
+                ax.text(x,y,z,  '%s' % (clabel), size=20, zorder=1, color='k') 
+        else:
+            self.clabels = data.columns.values
+            plt.figure(figsize=(10,10))
+            plt.margins(0.1)
+            plt.axhline(0, color='gray')
+            plt.axvline(0, color='gray')
+            plt.xlabel('Factor 1 (' + str(round(self.dimensions[0], 3)*100) + '%)') 
+            plt.ylabel('Factor 2 (' + str(round(self.dimensions[1], 3)*100) + '%)')
+            plt.scatter(*points,  s=120, marker='o', c='r', alpha=.5, linewidths=0)
+            plt.scatter(*urls,  s=120, marker='s', c='b', alpha=.5, linewidths=0)
+            for label, x, y in zip(self.clabels, *points):
                 plt.annotate(label, xy=(x, y), xytext=(x + .03, y + .03))
-        plt.show()
+            if self.LABEL_BOTH_FACTORS:
+                self.rlabels = df.T.index
+                for label, x, y in zip(self.rlabels, *urls):
+                    plt.annotate(label, xy=(x, y), xytext=(x + .03, y + .03))
+            plt.show()
         return(data.T)
     
     def mca(self, collections, names):
@@ -170,25 +203,34 @@ class Compare:
         if self.REMOVE_SINGLES:
             table1 = table1.loc[:, table1.sum(0) >1 ]
         table2 = mca.mca(table1)
+        #print (table2.index)
         self.response = table1
         self.dimensions = table2.L 
         #print(table2.inertia)
         fs, cos, cont = 'Factor score','Squared cosines', 'Contributions x 1000'
         data = pd.DataFrame(columns=table1.index, index=pd.MultiIndex
-                      .from_product([[fs, cos, cont], range(1, 3)]))
-        data.loc[fs,    :] = table2.fs_r(N=2).T
-        #print(data.loc[fs, :])
+                      .from_product([[fs, cos, cont], range(1, self.DIMS+1)]))
+        #print(data)
+        noise = 0.07 * (np.random.rand(*data.T[fs].shape) - 0.5)
+        if self.DIMS > 2:
+            data.loc[fs, :] = table2.fs_r(N=self.DIMS).T
+            self.result["rows"] = table2.fs_r(N=self.DIMS).T
+            self.result["columns"] = table2.fs_c(N=self.DIMS).T
+            self.result["df"] = data.T[fs].add(noise).groupby(level=['Collection'])
+            
+        data.loc[fs,    :] = table2.fs_r(N=self.DIMS).T
+ #       print(data.loc[fs, :])
 
         #print(points)
-        urls = table2.fs_c(N=2).T
-        plabels = var_index
-        
-        noise = 0.07 * (np.random.rand(*data.T[fs].shape) - 0.5)
-        fs_by_source = data.T[fs].add(noise).groupby(level=['Collection'])
-        fs_by_date = data.T[fs]
-        dpoints = data.loc[fs].values
-        fig, ax = plt.subplots(figsize=(10,10))
+        urls = table2.fs_c(N=self.DIMS).T
+        self.plabels = var_index        
 
+        fs_by_source = data.T[fs].add(noise).groupby(level=['Collection'])
+
+        fs_by_date = data.T[fs]
+        self.dpoints = data.loc[fs].values
+        print(self.dpoints[1:3])
+        fig, ax = plt.subplots(figsize=(10,10))
         plt.margins(0.1)
         plt.axhline(0, color='gray')
         plt.axvline(0, color='gray')
@@ -198,15 +240,16 @@ class Compare:
         markers = '^', 's', 'o', 'o', 'v', "<", ">", "p", "8", "h"
         colors = 'r', 'g', 'b', 'y', 'orange', 'peachpuff', 'm', 'c', 'k', 'navy'
         for fscore, marker, color in zip(fs_by_source, markers, colors):
-            #print(type(fscore[1]))
+            #print(type(fscore))
             label, points = fscore
-            ax.plot(*points.T.values, marker=marker, color=color, label=label, linestyle='', alpha=.5, mew=0, ms=12)
-            for plabel, x, y in zip(plabels, *dpoints):
-                #print(plabel)
+            ax.plot(*points.T.values[0:1], marker=marker, color=color, label=label, linestyle='', alpha=.5, mew=0, ms=12)
+            for plabel, x, y in zip(self.plabels, *self.dpoints[1:3]):
+                print(plabel)
                 #print(xy)
                 plt.annotate(plabel, xy=(x, y), xytext=(x + .15, y + .15))
         ax.legend(numpoints=1, loc=4)
         plt.show()
+        
         
 if __name__ == "__main__":
 	cp = Compare(collections)
