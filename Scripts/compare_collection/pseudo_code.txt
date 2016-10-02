@@ -1,0 +1,14 @@
+#1. Get base addresses for each file.
+#2. Initial comparison operations:
+##  - for two or three collections, compare with venn diagram
+##  - for three or more, use correspondence analysis to see which collections have
+##    the most in common.
+#3. Set AB = A %i% B; A = A - (A %i% B); B = B - (A %i% B) (for two comparison)
+#4. Set ABC = A %i% B %i% C; AB = A %i% B - (ABC)  (etc.)
+#5. Create table out of base addresses vs collections.
+##  - decide if you want weighted programs. Does it make sense to include how frequently each site was crawled including # of pages?
+##  - plot Chi-squared distance using mca library.
+#6. Develop script to construct edgelist / graph.
+#7. Save as graphml file for use in gephi.
+
+

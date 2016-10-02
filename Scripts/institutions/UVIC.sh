@@ -1,0 +1,14 @@
+sh ./warcbase-process.sh UVIC_anarchist_archives
+sh ./warcbase-process.sh UVIC_at_risk_websites
+sh ./warcbase-process.sh UVIC_bc_teachers_labour_dispute_2014
+sh ./warcbase-process.sh UVIC_environmental_organizations_and_resources_of_bc
+sh ./warcbase-process.sh UVIC_maps_at_risk
+sh ./warcbase-process.sh UVIC_trans_web
+sh ./warcbase-process.sh UVIC_University_of_Victoria_50th_Anniversary_1963-2013
+sh ./warcbase-process.sh UVIC_University_of_Victoria_Calendar
+sh ./warcbase-process.sh UVIC_University_of_Victoria_Digital_Scholarship_Websites
+sh ./warcbase-process.sh UVIC_University_of_Victoria_Faculty_Association_Certification_2014
+sh ./warcbase-process.sh UVIC_University_of_Victoria_Research_Centres_Groups_and_Corporate_Entities
+sh ./warcbase-process.sh UVIC_University_of_Victoria_Websites
+sh ./warcbase-process.sh UVIC_Vancouver_Island_Local_Governments
+sh ./warcbase-process.sh UVIC_Vancouver_Island_Local_News
