@@ -149,12 +149,12 @@ class Compare:
             plt.margins(0.1)
             plt.axhline(0, color='gray')
             plt.axvline(0, color='gray')
-            ax.set_xlabel('Factor 1 (' + str(round(self.dimensions[0], 3)*100) + '%)') 
-            ax.set_ylabel('Factor 2 (' + str(round(self.dimensions[1], 3)*100) + '%)')
-            ax.set_zlabel('Factor 3 (' + str(round(self.dimensions[2], 3)*100) + '%)')
+            ax.set_xlabel('Factor 1 (' + str(round(float(self.dimensions[0]), 3)*100) + '%)') 
+            ax.set_ylabel('Factor 2 (' + str(round(float(self.dimensions[1]), 3)*100) + '%)')
+            ax.set_zlabel('Factor 3 (' + str(round(float(self.dimensions[2]), 3)*100) + '%)')
         
             ax.scatter(*points,  s=120, marker='o', c='r', alpha=.5, linewidths=0)
-            ax.scatter(*urls, s=120, marker='s', c='b', alpha=.5, linewidths=0)
+            ax.scatter(*urls, s=120, marker='s', c='whitesmoke', alpha=.5, linewidths=0)
             for clabel, x, y, z in zip(clabels, *points):
                 ax.text(x,y,z,  '%s' % (clabel), size=20, zorder=1, color='k') 
         else:
@@ -163,10 +163,10 @@ class Compare:
             plt.margins(0.1)
             plt.axhline(0, color='gray')
             plt.axvline(0, color='gray')
-            plt.xlabel('Factor 1 (' + str(round(self.dimensions[0], 3)*100) + '%)') 
-            plt.ylabel('Factor 2 (' + str(round(self.dimensions[1], 3)*100) + '%)')
+            plt.xlabel('Factor 1 (' + str(round(float(self.dimensions[0]), 3)*100) + '%)') 
+            plt.ylabel('Factor 2 (' + str(round(float(self.dimensions[1]), 3)*100) + '%)')
             plt.scatter(*points,  s=120, marker='o', c='r', alpha=.5, linewidths=0)
-            plt.scatter(*urls,  s=120, marker='s', c='b', alpha=.5, linewidths=0)
+            plt.scatter(*urls,  s=120, marker='s', c='whitesmoke', alpha=.5, linewidths=0)
             for label, x, y in zip(self.clabels, *points):
                 plt.annotate(label, xy=(x, y), xytext=(x + .03, y + .03))
             if self.LABEL_BOTH_FACTORS:
@@ -234,8 +234,8 @@ class Compare:
         plt.margins(0.1)
         plt.axhline(0, color='gray')
         plt.axvline(0, color='gray')
-        plt.xlabel('Factor 1 (' + str(round(self.dimensions[0], 3)*100) + '%)')
-        plt.ylabel('Factor 2 (' + str(round(self.dimensions[1], 3)*100) + '%)')
+        plt.xlabel('Factor 1 (' + str(round(float(self.dimensions[0]), 3)*100) + '%)')
+        plt.ylabel('Factor 2 (' + str(round(float(self.dimensions[1]), 3)*100) + '%)')
         ax.margins(0.1)
         markers = '^', 's', 'o', 'o', 'v', "<", ">", "p", "8", "h"
         colors = 'r', 'g', 'b', 'y', 'orange', 'peachpuff', 'm', 'c', 'k', 'navy'
