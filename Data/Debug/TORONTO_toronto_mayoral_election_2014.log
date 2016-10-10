@@ -1,0 +1,619 @@
+2016-10-09 16:52:34,754 [main] WARN  NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-10-09 16:52:35,255 [main] INFO  SecurityManager - Changing view acls to: ubuntu
+2016-10-09 16:52:35,261 [main] INFO  SecurityManager - Changing modify acls to: ubuntu
+2016-10-09 16:52:35,261 [main] INFO  SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+2016-10-09 16:52:35,873 [main] INFO  HttpServer - Starting HTTP Server
+2016-10-09 16:52:36,000 [main] INFO  Server - jetty-8.y.z-SNAPSHOT
+2016-10-09 16:52:36,024 [main] INFO  AbstractConnector - Started SocketConnector@0.0.0.0:36925
+2016-10-09 16:52:36,025 [main] INFO  Utils - Successfully started service 'HTTP class server' on port 36925.
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /___/ .__/\_,_/_/ /_/\_\   version 1.6.1
+      /_/
+
+Using Scala version 2.10.5 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_91)
+Type in expressions to have them evaluated.
+Type :help for more information.
+2016-10-09 16:52:40,405 [main] WARN  Utils - Your hostname, compute-canada-will-accidentally-delete-this resolves to a loopback address: 127.0.0.1; using 192.168.32.16 instead (on interface eth0)
+2016-10-09 16:52:40,405 [main] WARN  Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2016-10-09 16:52:40,438 [main] INFO  SparkContext - Running Spark version 1.6.1
+2016-10-09 16:52:40,501 [main] INFO  SecurityManager - Changing view acls to: ubuntu
+2016-10-09 16:52:40,502 [main] INFO  SecurityManager - Changing modify acls to: ubuntu
+2016-10-09 16:52:40,502 [main] INFO  SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(ubuntu); users with modify permissions: Set(ubuntu)
+2016-10-09 16:52:40,890 [main] INFO  Utils - Successfully started service 'sparkDriver' on port 45708.
+2016-10-09 16:52:41,407 [sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Slf4jLogger - Slf4jLogger started
+2016-10-09 16:52:41,492 [sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting - Starting remoting
+2016-10-09 16:52:41,692 [sparkDriverActorSystem-akka.actor.default-dispatcher-3] INFO  Remoting - Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.32.16:51238]
+2016-10-09 16:52:41,697 [main] INFO  Utils - Successfully started service 'sparkDriverActorSystem' on port 51238.
+2016-10-09 16:52:41,723 [main] INFO  SparkEnv - Registering MapOutputTracker
+2016-10-09 16:52:41,797 [main] INFO  SparkEnv - Registering BlockManagerMaster
+2016-10-09 16:52:41,817 [main] INFO  DiskBlockManager - Created local directory at /tmp/blockmgr-4343da0e-2d52-44bb-beb2-38b5a5d26e5a
+2016-10-09 16:52:41,829 [main] INFO  MemoryStore - MemoryStore started with capacity 39.3 GB
+2016-10-09 16:52:41,901 [main] INFO  SparkEnv - Registering OutputCommitCoordinator
+2016-10-09 16:52:42,127 [main] INFO  Server - jetty-8.y.z-SNAPSHOT
+2016-10-09 16:52:42,141 [main] INFO  AbstractConnector - Started SelectChannelConnector@0.0.0.0:4040
+2016-10-09 16:52:42,142 [main] INFO  Utils - Successfully started service 'SparkUI' on port 4040.
+2016-10-09 16:52:42,149 [main] INFO  SparkUI - Started SparkUI at http://192.168.32.16:4040
+2016-10-09 16:52:42,182 [main] INFO  HttpFileServer - HTTP File server directory is /tmp/spark-3c9394d1-bc32-4b8e-acac-52751ed7e86a/httpd-59f82279-7f66-47b6-8fe6-385b73726e00
+2016-10-09 16:52:42,182 [main] INFO  HttpServer - Starting HTTP Server
+2016-10-09 16:52:42,183 [main] INFO  Server - jetty-8.y.z-SNAPSHOT
+2016-10-09 16:52:42,186 [main] INFO  AbstractConnector - Started SocketConnector@0.0.0.0:33647
+2016-10-09 16:52:42,187 [main] INFO  Utils - Successfully started service 'HTTP file server' on port 33647.
+2016-10-09 16:52:43,722 [main] INFO  SparkContext - Added JAR file:/home/ubuntu/project/warcbase/warcbase-core/target/warcbase-core-0.1.0-SNAPSHOT-fatjar.jar at http://192.168.32.16:33647/jars/warcbase-core-0.1.0-SNAPSHOT-fatjar.jar with timestamp 1476031963722
+2016-10-09 16:52:43,897 [main] INFO  Executor - Starting executor ID driver on host localhost
+2016-10-09 16:52:43,920 [main] INFO  Executor - Using REPL class URI: http://192.168.32.16:36925
+2016-10-09 16:52:43,951 [main] INFO  Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 53584.
+2016-10-09 16:52:43,952 [main] INFO  NettyBlockTransferService - Server created on 53584
+2016-10-09 16:52:43,954 [main] INFO  BlockManagerMaster - Trying to register BlockManager
+2016-10-09 16:52:43,975 [dispatcher-event-loop-10] INFO  BlockManagerMasterEndpoint - Registering block manager localhost:53584 with 39.3 GB RAM, BlockManagerId(driver, localhost, 53584)
+2016-10-09 16:52:43,989 [main] INFO  BlockManagerMaster - Registered BlockManager
+2016-10-09 16:52:44,217 [main] INFO  SparkILoop - Created spark context..
+Spark context available as sc.
+2016-10-09 16:52:45,408 [main] INFO  HiveContext - Initializing execution hive, version 1.2.1
+2016-10-09 16:52:45,504 [main] INFO  ClientWrapper - Inspected Hadoop version: 2.6.0
+2016-10-09 16:52:45,504 [main] INFO  ClientWrapper - Loaded org.apache.hadoop.hive.shims.Hadoop23Shims for Hadoop version 2.6.0
+2016-10-09 16:52:46,070 [main] INFO  HiveMetaStore - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2016-10-09 16:52:46,105 [main] INFO  ObjectStore - ObjectStore, initialize called
+2016-10-09 16:52:46,410 [main] INFO  Persistence - Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+2016-10-09 16:52:46,410 [main] INFO  Persistence - Property datanucleus.cache.level2 unknown - will be ignored
+2016-10-09 16:52:53,214 [main] INFO  ObjectStore - Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+2016-10-09 16:52:54,278 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:52:54,278 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:52:58,385 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:52:58,385 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:52:59,448 [main] INFO  MetaStoreDirectSql - Using direct SQL, underlying DB is DERBY
+2016-10-09 16:52:59,490 [main] INFO  ObjectStore - Initialized ObjectStore
+2016-10-09 16:52:59,774 [main] WARN  ObjectStore - Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 1.2.0
+2016-10-09 16:53:00,035 [main] WARN  ObjectStore - Failed to get database default, returning NoSuchObjectException
+2016-10-09 16:53:00,505 [main] INFO  HiveMetaStore - Added admin role in metastore
+2016-10-09 16:53:00,513 [main] INFO  HiveMetaStore - Added public role in metastore
+2016-10-09 16:53:00,813 [main] INFO  HiveMetaStore - No user is added in admin role, since config is empty
+2016-10-09 16:53:00,923 [main] INFO  HiveMetaStore - 0: get_all_databases
+2016-10-09 16:53:00,935 [main] INFO  audit - ugi=ubuntu	ip=unknown-ip-addr	cmd=get_all_databases	
+2016-10-09 16:53:00,961 [main] INFO  HiveMetaStore - 0: get_functions: db=default pat=*
+2016-10-09 16:53:00,961 [main] INFO  audit - ugi=ubuntu	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+2016-10-09 16:53:00,963 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:53:01,950 [main] INFO  SessionState - Created local directory: /tmp/c72f9497-6a49-4d18-ad40-51b402cdce29_resources
+2016-10-09 16:53:01,957 [main] INFO  SessionState - Created HDFS directory: /tmp/hive/ubuntu/c72f9497-6a49-4d18-ad40-51b402cdce29
+2016-10-09 16:53:01,962 [main] INFO  SessionState - Created local directory: /tmp/ubuntu/c72f9497-6a49-4d18-ad40-51b402cdce29
+2016-10-09 16:53:01,986 [main] INFO  SessionState - Created HDFS directory: /tmp/hive/ubuntu/c72f9497-6a49-4d18-ad40-51b402cdce29/_tmp_space.db
+2016-10-09 16:53:02,148 [main] INFO  HiveContext - default warehouse location is /user/hive/warehouse
+2016-10-09 16:53:02,158 [main] INFO  HiveContext - Initializing HiveMetastoreConnection version 1.2.1 using Spark classes.
+2016-10-09 16:53:02,175 [main] INFO  ClientWrapper - Inspected Hadoop version: 2.6.0
+2016-10-09 16:53:02,190 [main] INFO  ClientWrapper - Loaded org.apache.hadoop.hive.shims.Hadoop23Shims for Hadoop version 2.6.0
+2016-10-09 16:53:02,667 [main] INFO  HiveMetaStore - 0: Opening raw store with implemenation class:org.apache.hadoop.hive.metastore.ObjectStore
+2016-10-09 16:53:02,692 [main] INFO  ObjectStore - ObjectStore, initialize called
+2016-10-09 16:53:02,833 [main] INFO  Persistence - Property hive.metastore.integral.jdo.pushdown unknown - will be ignored
+2016-10-09 16:53:02,833 [main] INFO  Persistence - Property datanucleus.cache.level2 unknown - will be ignored
+2016-10-09 16:53:04,578 [main] INFO  ObjectStore - Setting MetaStore object pin classes with hive.metastore.cache.pinobjtypes="Table,StorageDescriptor,SerDeInfo,Partition,Database,Type,FieldSchema,Order"
+2016-10-09 16:53:05,307 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:53:05,308 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:53:05,552 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MFieldSchema" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:53:05,552 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MOrder" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:53:05,653 [main] INFO  Query - Reading in results for query "org.datanucleus.store.rdbms.query.SQLQuery@0" since the connection used is closing
+2016-10-09 16:53:05,655 [main] INFO  MetaStoreDirectSql - Using direct SQL, underlying DB is DERBY
+2016-10-09 16:53:05,657 [main] INFO  ObjectStore - Initialized ObjectStore
+2016-10-09 16:53:05,948 [main] INFO  HiveMetaStore - Added admin role in metastore
+2016-10-09 16:53:05,950 [main] INFO  HiveMetaStore - Added public role in metastore
+2016-10-09 16:53:06,011 [main] INFO  HiveMetaStore - No user is added in admin role, since config is empty
+2016-10-09 16:53:06,104 [main] INFO  HiveMetaStore - 0: get_all_databases
+2016-10-09 16:53:06,105 [main] INFO  audit - ugi=ubuntu	ip=unknown-ip-addr	cmd=get_all_databases	
+2016-10-09 16:53:06,127 [main] INFO  HiveMetaStore - 0: get_functions: db=default pat=*
+2016-10-09 16:53:06,127 [main] INFO  audit - ugi=ubuntu	ip=unknown-ip-addr	cmd=get_functions: db=default pat=*	
+2016-10-09 16:53:06,128 [main] INFO  Datastore - The class "org.apache.hadoop.hive.metastore.model.MResourceUri" is tagged as "embedded-only" so does not have its own datastore table.
+2016-10-09 16:53:06,211 [main] INFO  SessionState - Created local directory: /tmp/92477a09-08f8-4908-a730-9a29a98ae139_resources
+2016-10-09 16:53:06,216 [main] INFO  SessionState - Created HDFS directory: /tmp/hive/ubuntu/92477a09-08f8-4908-a730-9a29a98ae139
+2016-10-09 16:53:06,220 [main] INFO  SessionState - Created local directory: /tmp/ubuntu/92477a09-08f8-4908-a730-9a29a98ae139
+2016-10-09 16:53:06,225 [main] INFO  SessionState - Created HDFS directory: /tmp/hive/ubuntu/92477a09-08f8-4908-a730-9a29a98ae139/_tmp_space.db
+2016-10-09 16:53:06,242 [main] INFO  SparkILoop - Created sql context (with Hive support)..
+SQL context available as sqlContext.
+Loading /home/ubuntu/production/TORONTO_toronto_mayoral_election_2014.scala...
+import org.warcbase.spark.matchbox._
+import org.warcbase.spark.rdd.RecordRDD._
+import org.warcbase.spark.matchbox.{RemoveHTML, RecordLoader, ExtractBoilerpipeText}
+2016-10-09 16:53:10,597 [main] INFO  MemoryStore - Block broadcast_0 stored as values in memory (estimated size 265.5 KB, free 265.5 KB)
+2016-10-09 16:53:10,645 [main] INFO  MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 19.4 KB, free 285.0 KB)
+2016-10-09 16:53:10,647 [dispatcher-event-loop-0] INFO  BlockManagerInfo - Added broadcast_0_piece0 in memory on localhost:53584 (size: 19.4 KB, free: 39.3 GB)
+2016-10-09 16:53:10,650 [main] INFO  SparkContext - Created broadcast 0 from newAPIHadoopFile at RecordLoader.scala:42
+2016-10-09 16:53:10,914 [main] INFO  FileInputFormat - Total input paths to process : 292
+2016-10-09 16:53:11,023 [main] INFO  SparkContext - Starting job: sortBy at RecordRDD.scala:40
+2016-10-09 16:53:11,072 [dag-scheduler-event-loop] INFO  DAGScheduler - Registering RDD 5 (map at RecordRDD.scala:38)
+2016-10-09 16:53:11,076 [dag-scheduler-event-loop] INFO  DAGScheduler - Got job 0 (sortBy at RecordRDD.scala:40) with 292 output partitions
+2016-10-09 16:53:11,077 [dag-scheduler-event-loop] INFO  DAGScheduler - Final stage: ResultStage 1 (sortBy at RecordRDD.scala:40)
+2016-10-09 16:53:11,077 [dag-scheduler-event-loop] INFO  DAGScheduler - Parents of final stage: List(ShuffleMapStage 0)
+2016-10-09 16:53:11,079 [dag-scheduler-event-loop] INFO  DAGScheduler - Missing parents: List(ShuffleMapStage 0)
+2016-10-09 16:53:11,097 [dag-scheduler-event-loop] INFO  DAGScheduler - Submitting ShuffleMapStage 0 (MapPartitionsRDD[5] at map at RecordRDD.scala:38), which has no missing parents
+2016-10-09 16:53:11,145 [dag-scheduler-event-loop] INFO  MemoryStore - Block broadcast_1 stored as values in memory (estimated size 4.0 KB, free 289.0 KB)
+2016-10-09 16:53:11,149 [dag-scheduler-event-loop] INFO  MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.2 KB, free 291.1 KB)
+2016-10-09 16:53:11,149 [dispatcher-event-loop-1] INFO  BlockManagerInfo - Added broadcast_1_piece0 in memory on localhost:53584 (size: 2.2 KB, free: 39.3 GB)
+2016-10-09 16:53:11,153 [dag-scheduler-event-loop] INFO  SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+2016-10-09 16:53:11,160 [dag-scheduler-event-loop] INFO  DAGScheduler - Submitting 292 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[5] at map at RecordRDD.scala:38)
+2016-10-09 16:53:11,162 [dag-scheduler-event-loop] INFO  TaskSchedulerImpl - Adding task set 0.0 with 292 tasks
+2016-10-09 16:53:11,226 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,230 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 1.0 in stage 0.0 (TID 1, localhost, partition 1,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,231 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 2.0 in stage 0.0 (TID 2, localhost, partition 2,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,232 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 3.0 in stage 0.0 (TID 3, localhost, partition 3,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,233 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 4.0 in stage 0.0 (TID 4, localhost, partition 4,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,234 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 5.0 in stage 0.0 (TID 5, localhost, partition 5,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,235 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 6.0 in stage 0.0 (TID 6, localhost, partition 6,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,236 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 7.0 in stage 0.0 (TID 7, localhost, partition 7,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,237 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 8.0 in stage 0.0 (TID 8, localhost, partition 8,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,238 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 9.0 in stage 0.0 (TID 9, localhost, partition 9,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:53:11,239 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 10.0 in stage 0.0 (TID 10, localhost, partition 10,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,240 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 11.0 in stage 0.0 (TID 11, localhost, partition 11,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,241 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 12.0 in stage 0.0 (TID 12, localhost, partition 12,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:53:11,242 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 13.0 in stage 0.0 (TID 13, localhost, partition 13,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:53:11,244 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 14.0 in stage 0.0 (TID 14, localhost, partition 14,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:11,245 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 15.0 in stage 0.0 (TID 15, localhost, partition 15,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:53:11,251 [Executor task launch worker-2] INFO  Executor - Running task 2.0 in stage 0.0 (TID 2)
+2016-10-09 16:53:11,251 [Executor task launch worker-1] INFO  Executor - Running task 1.0 in stage 0.0 (TID 1)
+2016-10-09 16:53:11,251 [Executor task launch worker-0] INFO  Executor - Running task 0.0 in stage 0.0 (TID 0)
+2016-10-09 16:53:11,251 [Executor task launch worker-3] INFO  Executor - Running task 3.0 in stage 0.0 (TID 3)
+2016-10-09 16:53:11,253 [Executor task launch worker-4] INFO  Executor - Running task 4.0 in stage 0.0 (TID 4)
+2016-10-09 16:53:11,254 [Executor task launch worker-5] INFO  Executor - Running task 5.0 in stage 0.0 (TID 5)
+2016-10-09 16:53:11,255 [Executor task launch worker-6] INFO  Executor - Running task 6.0 in stage 0.0 (TID 6)
+2016-10-09 16:53:11,257 [Executor task launch worker-7] INFO  Executor - Running task 7.0 in stage 0.0 (TID 7)
+2016-10-09 16:53:11,260 [Executor task launch worker-8] INFO  Executor - Running task 8.0 in stage 0.0 (TID 8)
+2016-10-09 16:53:11,261 [Executor task launch worker-9] INFO  Executor - Running task 9.0 in stage 0.0 (TID 9)
+2016-10-09 16:53:11,262 [Executor task launch worker-10] INFO  Executor - Running task 10.0 in stage 0.0 (TID 10)
+2016-10-09 16:53:11,263 [Executor task launch worker-12] INFO  Executor - Running task 12.0 in stage 0.0 (TID 12)
+2016-10-09 16:53:11,264 [Executor task launch worker-11] INFO  Executor - Running task 11.0 in stage 0.0 (TID 11)
+2016-10-09 16:53:11,265 [Executor task launch worker-13] INFO  Executor - Running task 13.0 in stage 0.0 (TID 13)
+2016-10-09 16:53:11,266 [Executor task launch worker-14] INFO  Executor - Running task 14.0 in stage 0.0 (TID 14)
+2016-10-09 16:53:11,266 [Executor task launch worker-15] INFO  Executor - Running task 15.0 in stage 0.0 (TID 15)
+2016-10-09 16:53:11,267 [Executor task launch worker-4] INFO  Executor - Fetching http://192.168.32.16:33647/jars/warcbase-core-0.1.0-SNAPSHOT-fatjar.jar with timestamp 1476031963722
+2016-10-09 16:53:11,383 [Executor task launch worker-4] INFO  Utils - Fetching http://192.168.32.16:33647/jars/warcbase-core-0.1.0-SNAPSHOT-fatjar.jar to /tmp/spark-3c9394d1-bc32-4b8e-acac-52751ed7e86a/userFiles-342774f9-fc12-4d46-a76a-ef812ec2a646/fetchFileTemp4887752061707960577.tmp
+2016-10-09 16:53:12,834 [Executor task launch worker-4] INFO  Executor - Adding file:/tmp/spark-3c9394d1-bc32-4b8e-acac-52751ed7e86a/userFiles-342774f9-fc12-4d46-a76a-ef812ec2a646/warcbase-core-0.1.0-SNAPSHOT-fatjar.jar to class loader
+2016-10-09 16:53:12,865 [Executor task launch worker-10] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-12902-20141015200526932-00007-wbgrp-crawl060.us.archive.org-6442.warc.gz:0+1036191793
+2016-10-09 16:53:12,865 [Executor task launch worker-0] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022060215609-00045-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1030939199
+2016-10-09 16:53:12,865 [Executor task launch worker-7] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022072935233-00047-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1049291285
+2016-10-09 16:53:12,865 [Executor task launch worker-1] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028191352090-00034-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1024800101
+2016-10-09 16:53:12,866 [Executor task launch worker-14] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028180835312-00030-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1013133860
+2016-10-09 16:53:12,865 [Executor task launch worker-8] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141029174245251-00053-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1000006394
+2016-10-09 16:53:12,866 [Executor task launch worker-4] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141103114816289-00057-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+848152188
+2016-10-09 16:53:12,865 [Executor task launch worker-2] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028210829129-00042-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+2030698164
+2016-10-09 16:53:12,866 [Executor task launch worker-9] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004014638009-00037-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1038567661
+2016-10-09 16:53:12,866 [Executor task launch worker-15] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-5252-20140815134609226-00000-wbgrp-crawl052.us.archive.org-6441.warc.gz:0+995891
+2016-10-09 16:53:12,866 [Executor task launch worker-6] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028143115087-00011-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1003422862
+2016-10-09 16:53:12,866 [Executor task launch worker-3] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022013210048-00029-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1016273475
+2016-10-09 16:53:12,866 [Executor task launch worker-13] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003221551614-00013-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1052331819
+2016-10-09 16:53:12,866 [Executor task launch worker-5] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022025220413-00038-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1005197640
+2016-10-09 16:53:12,865 [Executor task launch worker-12] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004071221637-00069-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1016624067
+2016-10-09 16:53:12,865 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-24488-20140728133912288-00000-wbgrp-crawl101.us.archive.org-6446.warc.gz:0+132677277
+2016-10-09 16:53:16,013 [Executor task launch worker-15] INFO  Executor - Finished task 15.0 in stage 0.0 (TID 15). 2550 bytes result sent to driver
+2016-10-09 16:53:16,017 [dispatcher-event-loop-6] INFO  TaskSetManager - Starting task 16.0 in stage 0.0 (TID 16, localhost, partition 16,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 16:53:16,018 [Executor task launch worker-15] INFO  Executor - Running task 16.0 in stage 0.0 (TID 16)
+2016-10-09 16:53:16,026 [Executor task launch worker-15] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-12902-20141015192538738-00004-wbgrp-crawl060.us.archive.org-6442.warc.gz:0+1026118745
+2016-10-09 16:53:16,041 [task-result-getter-0] INFO  TaskSetManager - Finished task 15.0 in stage 0.0 (TID 15) in 4791 ms on localhost (1/292)
+2016-10-09 16:54:15,811 [Executor task launch worker-11] INFO  Executor - Finished task 11.0 in stage 0.0 (TID 11). 2550 bytes result sent to driver
+2016-10-09 16:54:15,813 [dispatcher-event-loop-8] INFO  TaskSetManager - Starting task 17.0 in stage 0.0 (TID 17, localhost, partition 17,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:54:15,813 [Executor task launch worker-11] INFO  Executor - Running task 17.0 in stage 0.0 (TID 17)
+2016-10-09 16:54:15,814 [task-result-getter-1] INFO  TaskSetManager - Finished task 11.0 in stage 0.0 (TID 11) in 64574 ms on localhost (2/292)
+2016-10-09 16:54:15,815 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-5252-20140812184541433-00000-wbgrp-crawl052.us.archive.org-6441.warc.gz:0+37583975
+2016-10-09 16:54:27,358 [Executor task launch worker-11] INFO  Executor - Finished task 17.0 in stage 0.0 (TID 17). 2550 bytes result sent to driver
+2016-10-09 16:54:27,359 [dispatcher-event-loop-9] INFO  TaskSetManager - Starting task 18.0 in stage 0.0 (TID 18, localhost, partition 18,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:54:27,360 [Executor task launch worker-11] INFO  Executor - Running task 18.0 in stage 0.0 (TID 18)
+2016-10-09 16:54:27,360 [task-result-getter-2] INFO  TaskSetManager - Finished task 17.0 in stage 0.0 (TID 17) in 11548 ms on localhost (3/292)
+2016-10-09 16:54:27,361 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004012058475-00034-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1039519088
+2016-10-09 16:56:12,102 [Executor task launch worker-4] INFO  Executor - Finished task 4.0 in stage 0.0 (TID 4). 2550 bytes result sent to driver
+2016-10-09 16:56:12,104 [dispatcher-event-loop-1] INFO  TaskSetManager - Starting task 19.0 in stage 0.0 (TID 19, localhost, partition 19,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:56:12,104 [Executor task launch worker-4] INFO  Executor - Running task 19.0 in stage 0.0 (TID 19)
+2016-10-09 16:56:12,104 [task-result-getter-3] INFO  TaskSetManager - Finished task 4.0 in stage 0.0 (TID 4) in 180872 ms on localhost (4/292)
+2016-10-09 16:56:12,107 [Executor task launch worker-4] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003210744636-00002-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1011774729
+2016-10-09 16:56:54,008 [Executor task launch worker-8] INFO  Executor - Finished task 8.0 in stage 0.0 (TID 8). 2550 bytes result sent to driver
+2016-10-09 16:56:54,009 [dispatcher-event-loop-12] INFO  TaskSetManager - Starting task 20.0 in stage 0.0 (TID 20, localhost, partition 20,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 16:56:54,010 [Executor task launch worker-8] INFO  Executor - Running task 20.0 in stage 0.0 (TID 20)
+2016-10-09 16:56:54,010 [task-result-getter-0] INFO  TaskSetManager - Finished task 8.0 in stage 0.0 (TID 8) in 222773 ms on localhost (5/292)
+2016-10-09 16:56:54,011 [Executor task launch worker-8] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014160550101-00011-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1034884824
+2016-10-09 17:02:19,918 [Executor task launch worker-12] INFO  Executor - Finished task 12.0 in stage 0.0 (TID 12). 2550 bytes result sent to driver
+2016-10-09 17:02:19,920 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 21.0 in stage 0.0 (TID 21, localhost, partition 21,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:02:19,920 [Executor task launch worker-12] INFO  Executor - Running task 21.0 in stage 0.0 (TID 21)
+2016-10-09 17:02:19,920 [task-result-getter-1] INFO  TaskSetManager - Finished task 12.0 in stage 0.0 (TID 12) in 548680 ms on localhost (6/292)
+2016-10-09 17:02:19,921 [Executor task launch worker-12] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014154400316-00007-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1124414902
+2016-10-09 17:02:22,678 [Executor task launch worker-0] INFO  Executor - Finished task 0.0 in stage 0.0 (TID 0). 2550 bytes result sent to driver
+2016-10-09 17:02:22,678 [dispatcher-event-loop-4] INFO  TaskSetManager - Starting task 22.0 in stage 0.0 (TID 22, localhost, partition 22,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:02:22,679 [Executor task launch worker-0] INFO  Executor - Running task 22.0 in stage 0.0 (TID 22)
+2016-10-09 17:02:22,680 [Executor task launch worker-0] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014192953465-00032-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1360816945
+2016-10-09 17:02:22,680 [task-result-getter-2] INFO  TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 551473 ms on localhost (7/292)
+2016-10-09 17:02:27,389 [Executor task launch worker-5] INFO  Executor - Finished task 5.0 in stage 0.0 (TID 5). 2550 bytes result sent to driver
+2016-10-09 17:02:27,390 [dispatcher-event-loop-11] INFO  TaskSetManager - Starting task 23.0 in stage 0.0 (TID 23, localhost, partition 23,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:02:27,390 [Executor task launch worker-5] INFO  Executor - Running task 23.0 in stage 0.0 (TID 23)
+2016-10-09 17:02:27,390 [task-result-getter-3] INFO  TaskSetManager - Finished task 5.0 in stage 0.0 (TID 5) in 556157 ms on localhost (8/292)
+2016-10-09 17:02:27,392 [Executor task launch worker-5] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003225643097-00019-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1008978212
+2016-10-09 17:02:27,871 [Executor task launch worker-14] INFO  Executor - Finished task 14.0 in stage 0.0 (TID 14). 2550 bytes result sent to driver
+2016-10-09 17:02:27,872 [dispatcher-event-loop-13] INFO  TaskSetManager - Starting task 24.0 in stage 0.0 (TID 24, localhost, partition 24,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:02:27,872 [Executor task launch worker-14] INFO  Executor - Running task 24.0 in stage 0.0 (TID 24)
+2016-10-09 17:02:27,872 [task-result-getter-0] INFO  TaskSetManager - Finished task 14.0 in stage 0.0 (TID 14) in 556630 ms on localhost (9/292)
+2016-10-09 17:02:27,873 [Executor task launch worker-14] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028140425101-00008-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1000018971
+2016-10-09 17:02:38,243 [Executor task launch worker-3] INFO  Executor - Finished task 3.0 in stage 0.0 (TID 3). 2550 bytes result sent to driver
+2016-10-09 17:02:38,244 [dispatcher-event-loop-1] INFO  TaskSetManager - Starting task 25.0 in stage 0.0 (TID 25, localhost, partition 25,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:02:38,244 [Executor task launch worker-3] INFO  Executor - Running task 25.0 in stage 0.0 (TID 25)
+2016-10-09 17:02:38,245 [task-result-getter-1] INFO  TaskSetManager - Finished task 3.0 in stage 0.0 (TID 3) in 567013 ms on localhost (10/292)
+2016-10-09 17:02:38,246 [Executor task launch worker-3] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141021205616082-00007-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1356431310
+2016-10-09 17:02:46,638 [Executor task launch worker-9] INFO  Executor - Finished task 9.0 in stage 0.0 (TID 9). 2550 bytes result sent to driver
+2016-10-09 17:02:46,638 [dispatcher-event-loop-6] INFO  TaskSetManager - Starting task 26.0 in stage 0.0 (TID 26, localhost, partition 26,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:02:46,639 [Executor task launch worker-9] INFO  Executor - Running task 26.0 in stage 0.0 (TID 26)
+2016-10-09 17:02:46,639 [task-result-getter-2] INFO  TaskSetManager - Finished task 9.0 in stage 0.0 (TID 9) in 575402 ms on localhost (11/292)
+2016-10-09 17:02:46,640 [Executor task launch worker-9] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014160141823-00010-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1116127469
+2016-10-09 17:02:47,981 [Executor task launch worker-6] INFO  Executor - Finished task 6.0 in stage 0.0 (TID 6). 2550 bytes result sent to driver
+2016-10-09 17:02:47,982 [dispatcher-event-loop-3] INFO  TaskSetManager - Starting task 27.0 in stage 0.0 (TID 27, localhost, partition 27,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:02:47,982 [task-result-getter-3] INFO  TaskSetManager - Finished task 6.0 in stage 0.0 (TID 6) in 576748 ms on localhost (12/292)
+2016-10-09 17:02:47,982 [Executor task launch worker-6] INFO  Executor - Running task 27.0 in stage 0.0 (TID 27)
+2016-10-09 17:02:47,984 [Executor task launch worker-6] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028174327723-00026-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1190115551
+2016-10-09 17:02:53,522 [Executor task launch worker-10] INFO  Executor - Finished task 10.0 in stage 0.0 (TID 10). 2550 bytes result sent to driver
+2016-10-09 17:02:53,524 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 28.0 in stage 0.0 (TID 28, localhost, partition 28,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:02:53,524 [Executor task launch worker-10] INFO  Executor - Running task 28.0 in stage 0.0 (TID 28)
+2016-10-09 17:02:53,525 [task-result-getter-0] INFO  TaskSetManager - Finished task 10.0 in stage 0.0 (TID 10) in 582286 ms on localhost (13/292)
+2016-10-09 17:02:53,526 [Executor task launch worker-10] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141020151516432-00000-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+816418255
+2016-10-09 17:02:58,766 [Executor task launch worker-1] INFO  Executor - Finished task 1.0 in stage 0.0 (TID 1). 2550 bytes result sent to driver
+2016-10-09 17:02:58,767 [dispatcher-event-loop-14] INFO  TaskSetManager - Starting task 29.0 in stage 0.0 (TID 29, localhost, partition 29,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:02:58,767 [Executor task launch worker-1] INFO  Executor - Running task 29.0 in stage 0.0 (TID 29)
+2016-10-09 17:02:58,768 [task-result-getter-1] INFO  TaskSetManager - Finished task 1.0 in stage 0.0 (TID 1) in 587538 ms on localhost (14/292)
+2016-10-09 17:02:58,769 [Executor task launch worker-1] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-32558-20141023185230288-00000-wbgrp-crawl101.us.archive.org-6441.warc.gz:0+1000008697
+2016-10-09 17:03:03,112 [Executor task launch worker-15] INFO  Executor - Finished task 16.0 in stage 0.0 (TID 16). 2550 bytes result sent to driver
+2016-10-09 17:03:03,113 [dispatcher-event-loop-0] INFO  TaskSetManager - Starting task 30.0 in stage 0.0 (TID 30, localhost, partition 30,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:03:03,114 [task-result-getter-2] INFO  TaskSetManager - Finished task 16.0 in stage 0.0 (TID 16) in 587099 ms on localhost (15/292)
+2016-10-09 17:03:03,114 [Executor task launch worker-15] INFO  Executor - Running task 30.0 in stage 0.0 (TID 30)
+2016-10-09 17:03:03,115 [Executor task launch worker-15] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004070749052-00068-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1010535157
+2016-10-09 17:03:04,827 [Executor task launch worker-13] INFO  Executor - Finished task 13.0 in stage 0.0 (TID 13). 2550 bytes result sent to driver
+2016-10-09 17:03:04,828 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 31.0 in stage 0.0 (TID 31, localhost, partition 31,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:03:04,829 [task-result-getter-3] INFO  TaskSetManager - Finished task 13.0 in stage 0.0 (TID 13) in 593587 ms on localhost (16/292)
+2016-10-09 17:03:04,831 [Executor task launch worker-13] INFO  Executor - Running task 31.0 in stage 0.0 (TID 31)
+2016-10-09 17:03:04,833 [Executor task launch worker-13] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-8742-20141011202201161-00002-wbgrp-crawl067.us.archive.org-6444.warc.gz:0+1000015017
+2016-10-09 17:03:23,219 [Executor task launch worker-7] INFO  Executor - Finished task 7.0 in stage 0.0 (TID 7). 2550 bytes result sent to driver
+2016-10-09 17:03:23,220 [dispatcher-event-loop-3] INFO  TaskSetManager - Starting task 32.0 in stage 0.0 (TID 32, localhost, partition 32,PROCESS_LOCAL, 2330 bytes)
+2016-10-09 17:03:23,221 [Executor task launch worker-7] INFO  Executor - Running task 32.0 in stage 0.0 (TID 32)
+2016-10-09 17:03:23,221 [task-result-getter-0] INFO  TaskSetManager - Finished task 7.0 in stage 0.0 (TID 7) in 611985 ms on localhost (17/292)
+2016-10-09 17:03:23,222 [Executor task launch worker-7] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-CRAWL_SELECTED_SEEDS-JOB191569-20160114151720002-00000.warc.gz:0+659613
+2016-10-09 17:03:23,477 [Executor task launch worker-7] INFO  Executor - Finished task 32.0 in stage 0.0 (TID 32). 2550 bytes result sent to driver
+2016-10-09 17:03:23,478 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 33.0 in stage 0.0 (TID 33, localhost, partition 33,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:03:23,478 [Executor task launch worker-7] INFO  Executor - Running task 33.0 in stage 0.0 (TID 33)
+2016-10-09 17:03:23,478 [task-result-getter-1] INFO  TaskSetManager - Finished task 32.0 in stage 0.0 (TID 32) in 258 ms on localhost (18/292)
+2016-10-09 17:03:23,479 [Executor task launch worker-7] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141021211057057-00009-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1008027676
+2016-10-09 17:04:27,160 [Executor task launch worker-11] INFO  Executor - Finished task 18.0 in stage 0.0 (TID 18). 2550 bytes result sent to driver
+2016-10-09 17:04:27,161 [dispatcher-event-loop-9] INFO  TaskSetManager - Starting task 34.0 in stage 0.0 (TID 34, localhost, partition 34,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:04:27,161 [Executor task launch worker-11] INFO  Executor - Running task 34.0 in stage 0.0 (TID 34)
+2016-10-09 17:04:27,163 [task-result-getter-2] INFO  TaskSetManager - Finished task 18.0 in stage 0.0 (TID 18) in 599804 ms on localhost (19/292)
+2016-10-09 17:04:27,164 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022073916392-00048-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+182295812
+2016-10-09 17:05:29,284 [Executor task launch worker-11] INFO  Executor - Finished task 34.0 in stage 0.0 (TID 34). 2550 bytes result sent to driver
+2016-10-09 17:05:29,284 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 35.0 in stage 0.0 (TID 35, localhost, partition 35,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:05:29,285 [Executor task launch worker-11] INFO  Executor - Running task 35.0 in stage 0.0 (TID 35)
+2016-10-09 17:05:29,285 [task-result-getter-3] INFO  TaskSetManager - Finished task 34.0 in stage 0.0 (TID 34) in 62124 ms on localhost (20/292)
+2016-10-09 17:05:29,287 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028214348830-00046-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1007070675
+2016-10-09 17:05:49,940 [Executor task launch worker-4] INFO  Executor - Finished task 19.0 in stage 0.0 (TID 19). 2550 bytes result sent to driver
+2016-10-09 17:05:49,941 [dispatcher-event-loop-1] INFO  TaskSetManager - Starting task 36.0 in stage 0.0 (TID 36, localhost, partition 36,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:05:49,941 [Executor task launch worker-4] INFO  Executor - Running task 36.0 in stage 0.0 (TID 36)
+2016-10-09 17:05:49,941 [task-result-getter-0] INFO  TaskSetManager - Finished task 19.0 in stage 0.0 (TID 19) in 577838 ms on localhost (21/292)
+2016-10-09 17:05:49,944 [Executor task launch worker-4] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028213349210-00045-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+2680050178
+2016-10-09 17:06:16,048 [Executor task launch worker-13] INFO  Executor - Finished task 31.0 in stage 0.0 (TID 31). 2550 bytes result sent to driver
+2016-10-09 17:06:16,049 [dispatcher-event-loop-4] INFO  TaskSetManager - Starting task 37.0 in stage 0.0 (TID 37, localhost, partition 37,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:06:16,050 [Executor task launch worker-13] INFO  Executor - Running task 37.0 in stage 0.0 (TID 37)
+2016-10-09 17:06:16,050 [task-result-getter-1] INFO  TaskSetManager - Finished task 31.0 in stage 0.0 (TID 31) in 191221 ms on localhost (22/292)
+2016-10-09 17:06:16,051 [Executor task launch worker-13] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003232611462-00022-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1024137303
+2016-10-09 17:06:51,792 [Executor task launch worker-8] INFO  Executor - Finished task 20.0 in stage 0.0 (TID 20). 2550 bytes result sent to driver
+2016-10-09 17:06:51,793 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 38.0 in stage 0.0 (TID 38, localhost, partition 38,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:06:51,793 [Executor task launch worker-8] INFO  Executor - Running task 38.0 in stage 0.0 (TID 38)
+2016-10-09 17:06:51,794 [task-result-getter-2] INFO  TaskSetManager - Finished task 20.0 in stage 0.0 (TID 20) in 597784 ms on localhost (23/292)
+2016-10-09 17:06:51,796 [Executor task launch worker-8] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-19725-20140930152100354-00001-wbgrp-crawl053.us.archive.org-6444.warc.gz:0+1000009207
+2016-10-09 17:07:24,338 [Executor task launch worker-10] INFO  Executor - Finished task 28.0 in stage 0.0 (TID 28). 2550 bytes result sent to driver
+2016-10-09 17:07:24,339 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 39.0 in stage 0.0 (TID 39, localhost, partition 39,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:07:24,339 [Executor task launch worker-10] INFO  Executor - Running task 39.0 in stage 0.0 (TID 39)
+2016-10-09 17:07:24,339 [task-result-getter-3] INFO  TaskSetManager - Finished task 28.0 in stage 0.0 (TID 28) in 270816 ms on localhost (24/292)
+2016-10-09 17:07:24,344 [Executor task launch worker-10] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014153357557-00006-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1004715419
+2016-10-09 17:08:06,847 [Executor task launch worker-1] INFO  Executor - Finished task 29.0 in stage 0.0 (TID 29). 2550 bytes result sent to driver
+2016-10-09 17:08:06,848 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 40.0 in stage 0.0 (TID 40, localhost, partition 40,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:08:06,848 [task-result-getter-0] INFO  TaskSetManager - Finished task 29.0 in stage 0.0 (TID 29) in 308081 ms on localhost (25/292)
+2016-10-09 17:08:06,848 [Executor task launch worker-1] INFO  Executor - Running task 40.0 in stage 0.0 (TID 40)
+2016-10-09 17:08:06,850 [Executor task launch worker-1] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004050434336-00056-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1027023433
+2016-10-09 17:09:53,636 [Executor task launch worker-8] INFO  Executor - Finished task 38.0 in stage 0.0 (TID 38). 2550 bytes result sent to driver
+2016-10-09 17:09:53,637 [dispatcher-event-loop-15] INFO  TaskSetManager - Starting task 41.0 in stage 0.0 (TID 41, localhost, partition 41,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:09:53,637 [Executor task launch worker-8] INFO  Executor - Running task 41.0 in stage 0.0 (TID 41)
+2016-10-09 17:09:53,638 [task-result-getter-1] INFO  TaskSetManager - Finished task 38.0 in stage 0.0 (TID 38) in 181844 ms on localhost (26/292)
+2016-10-09 17:09:53,638 [Executor task launch worker-8] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014183319291-00030-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1009492759
+2016-10-09 17:12:05,726 [Executor task launch worker-5] INFO  Executor - Finished task 23.0 in stage 0.0 (TID 23). 2550 bytes result sent to driver
+2016-10-09 17:12:05,727 [dispatcher-event-loop-13] INFO  TaskSetManager - Starting task 42.0 in stage 0.0 (TID 42, localhost, partition 42,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:12:05,727 [Executor task launch worker-5] INFO  Executor - Running task 42.0 in stage 0.0 (TID 42)
+2016-10-09 17:12:05,728 [task-result-getter-2] INFO  TaskSetManager - Finished task 23.0 in stage 0.0 (TID 23) in 578338 ms on localhost (27/292)
+2016-10-09 17:12:05,729 [Executor task launch worker-5] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003214538516-00009-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1003296564
+2016-10-09 17:12:12,493 [Executor task launch worker-14] INFO  Executor - Finished task 24.0 in stage 0.0 (TID 24). 2550 bytes result sent to driver
+2016-10-09 17:12:12,494 [dispatcher-event-loop-1] INFO  TaskSetManager - Starting task 43.0 in stage 0.0 (TID 43, localhost, partition 43,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:12:12,495 [Executor task launch worker-14] INFO  Executor - Running task 43.0 in stage 0.0 (TID 43)
+2016-10-09 17:12:12,495 [task-result-getter-3] INFO  TaskSetManager - Finished task 24.0 in stage 0.0 (TID 24) in 584622 ms on localhost (28/292)
+2016-10-09 17:12:12,496 [Executor task launch worker-14] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028175147405-00028-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1083128530
+2016-10-09 17:12:35,772 [Executor task launch worker-15] INFO  Executor - Finished task 30.0 in stage 0.0 (TID 30). 2550 bytes result sent to driver
+2016-10-09 17:12:35,772 [dispatcher-event-loop-4] INFO  TaskSetManager - Starting task 44.0 in stage 0.0 (TID 44, localhost, partition 44,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:12:35,773 [Executor task launch worker-15] INFO  Executor - Running task 44.0 in stage 0.0 (TID 44)
+2016-10-09 17:12:35,773 [task-result-getter-0] INFO  TaskSetManager - Finished task 30.0 in stage 0.0 (TID 30) in 572660 ms on localhost (29/292)
+2016-10-09 17:12:35,774 [Executor task launch worker-15] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004030425384-00046-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1009707471
+2016-10-09 17:13:05,355 [Executor task launch worker-12] INFO  Executor - Finished task 21.0 in stage 0.0 (TID 21). 2550 bytes result sent to driver
+2016-10-09 17:13:05,356 [dispatcher-event-loop-0] INFO  TaskSetManager - Starting task 45.0 in stage 0.0 (TID 45, localhost, partition 45,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:13:05,358 [task-result-getter-1] INFO  TaskSetManager - Finished task 21.0 in stage 0.0 (TID 21) in 645439 ms on localhost (30/292)
+2016-10-09 17:13:05,358 [Executor task launch worker-12] INFO  Executor - Running task 45.0 in stage 0.0 (TID 45)
+2016-10-09 17:13:05,360 [Executor task launch worker-12] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003233424762-00023-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1157645705
+2016-10-09 17:13:13,259 [Executor task launch worker-7] INFO  Executor - Finished task 33.0 in stage 0.0 (TID 33). 2550 bytes result sent to driver
+2016-10-09 17:13:13,260 [dispatcher-event-loop-6] INFO  TaskSetManager - Starting task 46.0 in stage 0.0 (TID 46, localhost, partition 46,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:13:13,261 [Executor task launch worker-7] INFO  Executor - Running task 46.0 in stage 0.0 (TID 46)
+2016-10-09 17:13:13,261 [task-result-getter-2] INFO  TaskSetManager - Finished task 33.0 in stage 0.0 (TID 33) in 589784 ms on localhost (31/292)
+2016-10-09 17:13:13,262 [Executor task launch worker-7] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028155224773-00018-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1035647008
+2016-10-09 17:13:34,546 [Executor task launch worker-9] INFO  Executor - Finished task 26.0 in stage 0.0 (TID 26). 2550 bytes result sent to driver
+2016-10-09 17:13:34,547 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 47.0 in stage 0.0 (TID 47, localhost, partition 47,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:13:34,548 [task-result-getter-3] INFO  TaskSetManager - Finished task 26.0 in stage 0.0 (TID 26) in 647910 ms on localhost (32/292)
+2016-10-09 17:13:34,548 [Executor task launch worker-9] INFO  Executor - Running task 47.0 in stage 0.0 (TID 47)
+2016-10-09 17:13:34,550 [Executor task launch worker-9] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014181810751-00029-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1001019187
+2016-10-09 17:14:13,821 [Executor task launch worker-6] INFO  Executor - Finished task 27.0 in stage 0.0 (TID 27). 2550 bytes result sent to driver
+2016-10-09 17:14:13,822 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 48.0 in stage 0.0 (TID 48, localhost, partition 48,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:14:13,822 [Executor task launch worker-6] INFO  Executor - Running task 48.0 in stage 0.0 (TID 48)
+2016-10-09 17:14:13,822 [task-result-getter-0] INFO  TaskSetManager - Finished task 27.0 in stage 0.0 (TID 27) in 685841 ms on localhost (33/292)
+2016-10-09 17:14:13,824 [Executor task launch worker-6] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-23908-20140716041840607-00001-wbgrp-crawl102.us.archive.org-6443.warc.gz:0+1000005001
+2016-10-09 17:14:14,106 [Executor task launch worker-2] INFO  Executor - Finished task 2.0 in stage 0.0 (TID 2). 2550 bytes result sent to driver
+2016-10-09 17:14:14,107 [dispatcher-event-loop-4] INFO  TaskSetManager - Starting task 49.0 in stage 0.0 (TID 49, localhost, partition 49,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:14:14,107 [Executor task launch worker-2] INFO  Executor - Running task 49.0 in stage 0.0 (TID 49)
+2016-10-09 17:14:14,108 [task-result-getter-1] INFO  TaskSetManager - Finished task 2.0 in stage 0.0 (TID 2) in 1262877 ms on localhost (34/292)
+2016-10-09 17:14:14,109 [Executor task launch worker-2] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141021215442973-00010-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1006433859
+2016-10-09 17:15:03,006 [Executor task launch worker-11] INFO  Executor - Finished task 35.0 in stage 0.0 (TID 35). 2550 bytes result sent to driver
+2016-10-09 17:15:03,007 [dispatcher-event-loop-6] INFO  TaskSetManager - Starting task 50.0 in stage 0.0 (TID 50, localhost, partition 50,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:15:03,008 [Executor task launch worker-11] INFO  Executor - Running task 50.0 in stage 0.0 (TID 50)
+2016-10-09 17:15:03,008 [task-result-getter-2] INFO  TaskSetManager - Finished task 35.0 in stage 0.0 (TID 35) in 573724 ms on localhost (35/292)
+2016-10-09 17:15:03,009 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028135330826-00006-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1359268025
+2016-10-09 17:15:21,555 [Executor task launch worker-0] INFO  Executor - Finished task 22.0 in stage 0.0 (TID 22). 2550 bytes result sent to driver
+2016-10-09 17:15:21,556 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 51.0 in stage 0.0 (TID 51, localhost, partition 51,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:15:21,556 [Executor task launch worker-0] INFO  Executor - Running task 51.0 in stage 0.0 (TID 51)
+2016-10-09 17:15:21,557 [task-result-getter-3] INFO  TaskSetManager - Finished task 22.0 in stage 0.0 (TID 22) in 778879 ms on localhost (36/292)
+2016-10-09 17:15:21,557 [Executor task launch worker-0] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028172534931-00025-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1076806561
+2016-10-09 17:15:59,207 [Executor task launch worker-3] INFO  Executor - Finished task 25.0 in stage 0.0 (TID 25). 2550 bytes result sent to driver
+2016-10-09 17:15:59,208 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 52.0 in stage 0.0 (TID 52, localhost, partition 52,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:15:59,208 [task-result-getter-0] INFO  TaskSetManager - Finished task 25.0 in stage 0.0 (TID 25) in 800964 ms on localhost (37/292)
+2016-10-09 17:15:59,209 [Executor task launch worker-3] INFO  Executor - Running task 52.0 in stage 0.0 (TID 52)
+2016-10-09 17:15:59,211 [Executor task launch worker-3] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014211710746-00039-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1022993307
+2016-10-09 17:16:06,407 [Executor task launch worker-13] INFO  Executor - Finished task 37.0 in stage 0.0 (TID 37). 2550 bytes result sent to driver
+2016-10-09 17:16:06,409 [dispatcher-event-loop-4] INFO  TaskSetManager - Starting task 53.0 in stage 0.0 (TID 53, localhost, partition 53,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:16:06,409 [task-result-getter-1] INFO  TaskSetManager - Finished task 37.0 in stage 0.0 (TID 37) in 590360 ms on localhost (38/292)
+2016-10-09 17:16:06,411 [Executor task launch worker-13] INFO  Executor - Running task 53.0 in stage 0.0 (TID 53)
+2016-10-09 17:16:06,413 [Executor task launch worker-13] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-19725-20141003095825388-00004-wbgrp-crawl053.us.archive.org-6444.warc.gz:0+486113157
+2016-10-09 17:17:02,966 [Executor task launch worker-10] INFO  Executor - Finished task 39.0 in stage 0.0 (TID 39). 2550 bytes result sent to driver
+2016-10-09 17:17:02,966 [dispatcher-event-loop-7] INFO  TaskSetManager - Starting task 54.0 in stage 0.0 (TID 54, localhost, partition 54,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:17:02,966 [Executor task launch worker-10] INFO  Executor - Running task 54.0 in stage 0.0 (TID 54)
+2016-10-09 17:17:02,966 [task-result-getter-2] INFO  TaskSetManager - Finished task 39.0 in stage 0.0 (TID 39) in 578628 ms on localhost (39/292)
+2016-10-09 17:17:02,968 [Executor task launch worker-10] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004065154417-00066-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1010256428
+2016-10-09 17:17:23,124 [Executor task launch worker-6] INFO  Executor - Finished task 48.0 in stage 0.0 (TID 48). 2550 bytes result sent to driver
+2016-10-09 17:17:23,125 [dispatcher-event-loop-12] INFO  TaskSetManager - Starting task 55.0 in stage 0.0 (TID 55, localhost, partition 55,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:17:23,125 [task-result-getter-3] INFO  TaskSetManager - Finished task 48.0 in stage 0.0 (TID 48) in 189304 ms on localhost (40/292)
+2016-10-09 17:17:23,125 [Executor task launch worker-6] INFO  Executor - Running task 55.0 in stage 0.0 (TID 55)
+2016-10-09 17:17:23,126 [Executor task launch worker-6] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004072442853-00071-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1005578764
+2016-10-09 17:17:34,228 [Executor task launch worker-13] INFO  Executor - Finished task 53.0 in stage 0.0 (TID 53). 2550 bytes result sent to driver
+2016-10-09 17:17:34,229 [dispatcher-event-loop-0] INFO  TaskSetManager - Starting task 56.0 in stage 0.0 (TID 56, localhost, partition 56,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:17:34,229 [Executor task launch worker-13] INFO  Executor - Running task 56.0 in stage 0.0 (TID 56)
+2016-10-09 17:17:34,229 [task-result-getter-0] INFO  TaskSetManager - Finished task 53.0 in stage 0.0 (TID 53) in 87821 ms on localhost (41/292)
+2016-10-09 17:17:34,230 [Executor task launch worker-13] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003224817358-00018-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1009176072
+2016-10-09 17:18:05,094 [Executor task launch worker-1] INFO  Executor - Finished task 40.0 in stage 0.0 (TID 40). 2550 bytes result sent to driver
+2016-10-09 17:18:05,095 [dispatcher-event-loop-9] INFO  TaskSetManager - Starting task 57.0 in stage 0.0 (TID 57, localhost, partition 57,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:18:05,095 [Executor task launch worker-1] INFO  Executor - Running task 57.0 in stage 0.0 (TID 57)
+2016-10-09 17:18:05,095 [task-result-getter-1] INFO  TaskSetManager - Finished task 40.0 in stage 0.0 (TID 40) in 598248 ms on localhost (42/292)
+2016-10-09 17:18:05,096 [Executor task launch worker-1] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014180454402-00028-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1015536921
+2016-10-09 17:19:23,367 [Executor task launch worker-8] INFO  Executor - Finished task 41.0 in stage 0.0 (TID 41). 2550 bytes result sent to driver
+2016-10-09 17:19:23,368 [dispatcher-event-loop-12] INFO  TaskSetManager - Starting task 58.0 in stage 0.0 (TID 58, localhost, partition 58,PROCESS_LOCAL, 2344 bytes)
+2016-10-09 17:19:23,368 [task-result-getter-2] INFO  TaskSetManager - Finished task 41.0 in stage 0.0 (TID 41) in 569732 ms on localhost (43/292)
+2016-10-09 17:19:23,369 [Executor task launch worker-16] INFO  Executor - Running task 58.0 in stage 0.0 (TID 58)
+2016-10-09 17:19:23,370 [Executor task launch worker-16] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-588-20140819141000093-00000-wbgrp-crawl101.us.archive.org-6440.warc.gz:0+317920604
+2016-10-09 17:21:39,679 [Executor task launch worker-5] INFO  Executor - Finished task 42.0 in stage 0.0 (TID 42). 2550 bytes result sent to driver
+2016-10-09 17:21:39,680 [dispatcher-event-loop-12] INFO  TaskSetManager - Starting task 59.0 in stage 0.0 (TID 59, localhost, partition 59,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:21:39,681 [Executor task launch worker-5] INFO  Executor - Running task 59.0 in stage 0.0 (TID 59)
+2016-10-09 17:21:39,681 [task-result-getter-3] INFO  TaskSetManager - Finished task 42.0 in stage 0.0 (TID 42) in 573954 ms on localhost (44/292)
+2016-10-09 17:21:39,682 [Executor task launch worker-5] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141021223509261-00013-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1010447553
+2016-10-09 17:21:42,255 [Executor task launch worker-16] INFO  Executor - Finished task 58.0 in stage 0.0 (TID 58). 2550 bytes result sent to driver
+2016-10-09 17:21:42,256 [dispatcher-event-loop-14] INFO  TaskSetManager - Starting task 60.0 in stage 0.0 (TID 60, localhost, partition 60,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:21:42,257 [Executor task launch worker-16] INFO  Executor - Running task 60.0 in stage 0.0 (TID 60)
+2016-10-09 17:21:42,257 [task-result-getter-0] INFO  TaskSetManager - Finished task 58.0 in stage 0.0 (TID 58) in 138890 ms on localhost (45/292)
+2016-10-09 17:21:42,259 [Executor task launch worker-16] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004073121172-00072-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+940915122
+2016-10-09 17:22:06,629 [Executor task launch worker-15] INFO  Executor - Finished task 44.0 in stage 0.0 (TID 44). 2550 bytes result sent to driver
+2016-10-09 17:22:06,630 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 61.0 in stage 0.0 (TID 61, localhost, partition 61,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:22:06,630 [Executor task launch worker-15] INFO  Executor - Running task 61.0 in stage 0.0 (TID 61)
+2016-10-09 17:22:06,630 [task-result-getter-1] INFO  TaskSetManager - Finished task 44.0 in stage 0.0 (TID 44) in 570858 ms on localhost (46/292)
+2016-10-09 17:22:06,631 [Executor task launch worker-15] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022051704148-00043-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1057908068
+2016-10-09 17:22:47,875 [Executor task launch worker-14] INFO  Executor - Finished task 43.0 in stage 0.0 (TID 43). 2550 bytes result sent to driver
+2016-10-09 17:22:47,876 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 62.0 in stage 0.0 (TID 62, localhost, partition 62,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:22:47,876 [Executor task launch worker-14] INFO  Executor - Running task 62.0 in stage 0.0 (TID 62)
+2016-10-09 17:22:47,876 [task-result-getter-2] INFO  TaskSetManager - Finished task 43.0 in stage 0.0 (TID 43) in 635382 ms on localhost (47/292)
+2016-10-09 17:22:47,877 [Executor task launch worker-14] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014162717064-00015-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1003830157
+2016-10-09 17:23:01,957 [Executor task launch worker-7] INFO  Executor - Finished task 46.0 in stage 0.0 (TID 46). 2550 bytes result sent to driver
+2016-10-09 17:23:01,958 [dispatcher-event-loop-7] INFO  TaskSetManager - Starting task 63.0 in stage 0.0 (TID 63, localhost, partition 63,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:23:01,958 [Executor task launch worker-7] INFO  Executor - Running task 63.0 in stage 0.0 (TID 63)
+2016-10-09 17:23:01,958 [task-result-getter-3] INFO  TaskSetManager - Finished task 46.0 in stage 0.0 (TID 46) in 588698 ms on localhost (48/292)
+2016-10-09 17:23:01,961 [Executor task launch worker-7] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028211747816-00043-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1234660323
+2016-10-09 17:23:16,094 [Executor task launch worker-9] INFO  Executor - Finished task 47.0 in stage 0.0 (TID 47). 2550 bytes result sent to driver
+2016-10-09 17:23:16,095 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 64.0 in stage 0.0 (TID 64, localhost, partition 64,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:23:16,096 [Executor task launch worker-9] INFO  Executor - Running task 64.0 in stage 0.0 (TID 64)
+2016-10-09 17:23:16,096 [task-result-getter-0] INFO  TaskSetManager - Finished task 47.0 in stage 0.0 (TID 47) in 581549 ms on localhost (49/292)
+2016-10-09 17:23:16,097 [Executor task launch worker-9] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028235818449-00050-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1062035050
+2016-10-09 17:23:54,786 [Executor task launch worker-2] INFO  Executor - Finished task 49.0 in stage 0.0 (TID 49). 2550 bytes result sent to driver
+2016-10-09 17:23:54,787 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 65.0 in stage 0.0 (TID 65, localhost, partition 65,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:23:54,787 [Executor task launch worker-2] INFO  Executor - Running task 65.0 in stage 0.0 (TID 65)
+2016-10-09 17:23:54,788 [task-result-getter-1] INFO  TaskSetManager - Finished task 49.0 in stage 0.0 (TID 49) in 580680 ms on localhost (50/292)
+2016-10-09 17:23:54,789 [Executor task launch worker-2] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-12902-20141015183123670-00001-wbgrp-crawl060.us.archive.org-6442.warc.gz:0+1015829238
+2016-10-09 17:23:58,381 [Executor task launch worker-12] INFO  Executor - Finished task 45.0 in stage 0.0 (TID 45). 2550 bytes result sent to driver
+2016-10-09 17:23:58,382 [dispatcher-event-loop-9] INFO  TaskSetManager - Starting task 66.0 in stage 0.0 (TID 66, localhost, partition 66,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:23:58,382 [Executor task launch worker-12] INFO  Executor - Running task 66.0 in stage 0.0 (TID 66)
+2016-10-09 17:23:58,383 [task-result-getter-2] INFO  TaskSetManager - Finished task 45.0 in stage 0.0 (TID 45) in 653027 ms on localhost (51/292)
+2016-10-09 17:23:58,384 [Executor task launch worker-12] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014164425754-00018-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1005294774
+2016-10-09 17:25:22,296 [Executor task launch worker-0] INFO  Executor - Finished task 51.0 in stage 0.0 (TID 51). 2550 bytes result sent to driver
+2016-10-09 17:25:22,297 [dispatcher-event-loop-12] INFO  TaskSetManager - Starting task 67.0 in stage 0.0 (TID 67, localhost, partition 67,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:25:22,297 [Executor task launch worker-0] INFO  Executor - Running task 67.0 in stage 0.0 (TID 67)
+2016-10-09 17:25:22,297 [task-result-getter-3] INFO  TaskSetManager - Finished task 51.0 in stage 0.0 (TID 51) in 600741 ms on localhost (52/292)
+2016-10-09 17:25:22,298 [Executor task launch worker-0] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022054041950-00044-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1121296199
+2016-10-09 17:25:28,511 [Executor task launch worker-3] INFO  Executor - Finished task 52.0 in stage 0.0 (TID 52). 2550 bytes result sent to driver
+2016-10-09 17:25:28,511 [dispatcher-event-loop-0] INFO  TaskSetManager - Starting task 68.0 in stage 0.0 (TID 68, localhost, partition 68,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:25:28,512 [Executor task launch worker-3] INFO  Executor - Running task 68.0 in stage 0.0 (TID 68)
+2016-10-09 17:25:28,512 [task-result-getter-0] INFO  TaskSetManager - Finished task 52.0 in stage 0.0 (TID 52) in 569305 ms on localhost (53/292)
+2016-10-09 17:25:28,514 [Executor task launch worker-3] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014153126772-00005-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1053104743
+2016-10-09 17:26:41,799 [Executor task launch worker-10] INFO  Executor - Finished task 54.0 in stage 0.0 (TID 54). 2550 bytes result sent to driver
+2016-10-09 17:26:41,800 [dispatcher-event-loop-1] INFO  TaskSetManager - Starting task 69.0 in stage 0.0 (TID 69, localhost, partition 69,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:26:41,800 [Executor task launch worker-10] INFO  Executor - Running task 69.0 in stage 0.0 (TID 69)
+2016-10-09 17:26:41,800 [task-result-getter-1] INFO  TaskSetManager - Finished task 54.0 in stage 0.0 (TID 54) in 578834 ms on localhost (54/292)
+2016-10-09 17:26:41,802 [Executor task launch worker-10] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028134404518-00005-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1000015962
+2016-10-09 17:27:19,689 [Executor task launch worker-6] INFO  Executor - Finished task 55.0 in stage 0.0 (TID 55). 2550 bytes result sent to driver
+2016-10-09 17:27:19,690 [dispatcher-event-loop-12] INFO  TaskSetManager - Starting task 70.0 in stage 0.0 (TID 70, localhost, partition 70,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:27:19,691 [task-result-getter-2] INFO  TaskSetManager - Finished task 55.0 in stage 0.0 (TID 55) in 596565 ms on localhost (55/292)
+2016-10-09 17:27:19,691 [Executor task launch worker-6] INFO  Executor - Running task 70.0 in stage 0.0 (TID 70)
+2016-10-09 17:27:19,692 [Executor task launch worker-6] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003214940954-00010-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1225925369
+2016-10-09 17:27:21,764 [Executor task launch worker-13] INFO  Executor - Finished task 56.0 in stage 0.0 (TID 56). 2550 bytes result sent to driver
+2016-10-09 17:27:21,765 [dispatcher-event-loop-14] INFO  TaskSetManager - Starting task 71.0 in stage 0.0 (TID 71, localhost, partition 71,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:27:21,765 [Executor task launch worker-13] INFO  Executor - Running task 71.0 in stage 0.0 (TID 71)
+2016-10-09 17:27:21,765 [task-result-getter-3] INFO  TaskSetManager - Finished task 56.0 in stage 0.0 (TID 56) in 587536 ms on localhost (56/292)
+2016-10-09 17:27:21,766 [Executor task launch worker-13] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-29651-20140903200243974-00000-wbgrp-crawl062.us.archive.org-6442.warc.gz:0+3146706
+2016-10-09 17:27:22,949 [Executor task launch worker-13] INFO  Executor - Finished task 71.0 in stage 0.0 (TID 71). 2550 bytes result sent to driver
+2016-10-09 17:27:22,950 [dispatcher-event-loop-0] INFO  TaskSetManager - Starting task 72.0 in stage 0.0 (TID 72, localhost, partition 72,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:27:22,950 [Executor task launch worker-13] INFO  Executor - Running task 72.0 in stage 0.0 (TID 72)
+2016-10-09 17:27:22,950 [task-result-getter-0] INFO  TaskSetManager - Finished task 71.0 in stage 0.0 (TID 71) in 1186 ms on localhost (57/292)
+2016-10-09 17:27:22,951 [Executor task launch worker-13] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003223828527-00015-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1050263285
+2016-10-09 17:28:01,129 [Executor task launch worker-1] INFO  Executor - Finished task 57.0 in stage 0.0 (TID 57). 2550 bytes result sent to driver
+2016-10-09 17:28:01,130 [dispatcher-event-loop-11] INFO  TaskSetManager - Starting task 73.0 in stage 0.0 (TID 73, localhost, partition 73,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:28:01,130 [Executor task launch worker-1] INFO  Executor - Running task 73.0 in stage 0.0 (TID 73)
+2016-10-09 17:28:01,130 [task-result-getter-1] INFO  TaskSetManager - Finished task 57.0 in stage 0.0 (TID 57) in 596036 ms on localhost (58/292)
+2016-10-09 17:28:01,132 [Executor task launch worker-1] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003234444652-00024-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1064457062
+2016-10-09 17:28:07,589 [Executor task launch worker-11] INFO  Executor - Finished task 50.0 in stage 0.0 (TID 50). 2550 bytes result sent to driver
+2016-10-09 17:28:07,589 [dispatcher-event-loop-15] INFO  TaskSetManager - Starting task 74.0 in stage 0.0 (TID 74, localhost, partition 74,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:28:07,590 [task-result-getter-2] INFO  TaskSetManager - Finished task 50.0 in stage 0.0 (TID 50) in 784583 ms on localhost (59/292)
+2016-10-09 17:28:07,591 [Executor task launch worker-11] INFO  Executor - Running task 74.0 in stage 0.0 (TID 74)
+2016-10-09 17:28:07,592 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141021234632507-00018-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1106578297
+2016-10-09 17:30:46,748 [Executor task launch worker-16] INFO  Executor - Finished task 60.0 in stage 0.0 (TID 60). 2550 bytes result sent to driver
+2016-10-09 17:30:46,750 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 75.0 in stage 0.0 (TID 75, localhost, partition 75,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:30:46,750 [Executor task launch worker-16] INFO  Executor - Running task 75.0 in stage 0.0 (TID 75)
+2016-10-09 17:30:46,751 [task-result-getter-3] INFO  TaskSetManager - Finished task 60.0 in stage 0.0 (TID 60) in 544495 ms on localhost (60/292)
+2016-10-09 17:30:46,752 [Executor task launch worker-16] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004070234765-00067-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1064040768
+2016-10-09 17:31:17,478 [Executor task launch worker-5] INFO  Executor - Finished task 59.0 in stage 0.0 (TID 59). 2550 bytes result sent to driver
+2016-10-09 17:31:17,484 [dispatcher-event-loop-12] INFO  TaskSetManager - Starting task 76.0 in stage 0.0 (TID 76, localhost, partition 76,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:31:17,484 [Executor task launch worker-5] INFO  Executor - Running task 76.0 in stage 0.0 (TID 76)
+2016-10-09 17:31:17,485 [task-result-getter-0] INFO  TaskSetManager - Finished task 59.0 in stage 0.0 (TID 59) in 577804 ms on localhost (61/292)
+2016-10-09 17:31:17,489 [Executor task launch worker-5] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022021544641-00034-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1180711458
+2016-10-09 17:31:49,223 [Executor task launch worker-4] INFO  Executor - Finished task 36.0 in stage 0.0 (TID 36). 2550 bytes result sent to driver
+2016-10-09 17:31:49,226 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 77.0 in stage 0.0 (TID 77, localhost, partition 77,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:31:49,226 [Executor task launch worker-4] INFO  Executor - Running task 77.0 in stage 0.0 (TID 77)
+2016-10-09 17:31:49,227 [task-result-getter-1] INFO  TaskSetManager - Finished task 36.0 in stage 0.0 (TID 36) in 1559285 ms on localhost (62/292)
+2016-10-09 17:31:49,228 [Executor task launch worker-4] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-12477-20150616202410760-00000-wbgrp-crawl055.us.archive.org-6442.warc.gz:0+364060
+2016-10-09 17:31:49,296 [Executor task launch worker-4] INFO  Executor - Finished task 77.0 in stage 0.0 (TID 77). 2550 bytes result sent to driver
+2016-10-09 17:31:49,297 [dispatcher-event-loop-4] INFO  TaskSetManager - Starting task 78.0 in stage 0.0 (TID 78, localhost, partition 78,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:31:49,297 [Executor task launch worker-4] INFO  Executor - Running task 78.0 in stage 0.0 (TID 78)
+2016-10-09 17:31:49,298 [task-result-getter-2] INFO  TaskSetManager - Finished task 77.0 in stage 0.0 (TID 77) in 75 ms on localhost (63/292)
+2016-10-09 17:31:49,299 [Executor task launch worker-4] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022005235568-00024-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+2197773675
+2016-10-09 17:32:27,117 [Executor task launch worker-14] INFO  Executor - Finished task 62.0 in stage 0.0 (TID 62). 2550 bytes result sent to driver
+2016-10-09 17:32:27,124 [dispatcher-event-loop-15] INFO  TaskSetManager - Starting task 79.0 in stage 0.0 (TID 79, localhost, partition 79,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:32:27,124 [Executor task launch worker-14] INFO  Executor - Running task 79.0 in stage 0.0 (TID 79)
+2016-10-09 17:32:27,125 [task-result-getter-3] INFO  TaskSetManager - Finished task 62.0 in stage 0.0 (TID 62) in 579250 ms on localhost (64/292)
+2016-10-09 17:32:27,126 [Executor task launch worker-14] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014202407751-00036-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1017119340
+2016-10-09 17:32:41,238 [Executor task launch worker-15] INFO  Executor - Finished task 61.0 in stage 0.0 (TID 61). 2550 bytes result sent to driver
+2016-10-09 17:32:41,240 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 80.0 in stage 0.0 (TID 80, localhost, partition 80,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:32:41,240 [Executor task launch worker-15] INFO  Executor - Running task 80.0 in stage 0.0 (TID 80)
+2016-10-09 17:32:41,240 [task-result-getter-0] INFO  TaskSetManager - Finished task 61.0 in stage 0.0 (TID 61) in 634610 ms on localhost (65/292)
+2016-10-09 17:32:41,242 [Executor task launch worker-15] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022022917331-00036-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1711123122
+2016-10-09 17:33:10,199 [Executor task launch worker-9] INFO  Executor - Finished task 64.0 in stage 0.0 (TID 64). 2550 bytes result sent to driver
+2016-10-09 17:33:10,201 [dispatcher-event-loop-14] INFO  TaskSetManager - Starting task 81.0 in stage 0.0 (TID 81, localhost, partition 81,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:33:10,201 [Executor task launch worker-9] INFO  Executor - Running task 81.0 in stage 0.0 (TID 81)
+2016-10-09 17:33:10,201 [task-result-getter-1] INFO  TaskSetManager - Finished task 64.0 in stage 0.0 (TID 64) in 594107 ms on localhost (66/292)
+2016-10-09 17:33:10,203 [Executor task launch worker-9] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022004823289-00023-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+2336534977
+2016-10-09 17:33:32,798 [Executor task launch worker-12] INFO  Executor - Finished task 66.0 in stage 0.0 (TID 66). 2550 bytes result sent to driver
+2016-10-09 17:33:32,800 [dispatcher-event-loop-6] INFO  TaskSetManager - Starting task 82.0 in stage 0.0 (TID 82, localhost, partition 82,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:33:32,800 [Executor task launch worker-12] INFO  Executor - Running task 82.0 in stage 0.0 (TID 82)
+2016-10-09 17:33:32,816 [task-result-getter-2] INFO  TaskSetManager - Finished task 66.0 in stage 0.0 (TID 66) in 574434 ms on localhost (67/292)
+2016-10-09 17:33:32,852 [Executor task launch worker-12] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014152852208-00004-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1021231583
+2016-10-09 17:33:39,288 [Executor task launch worker-2] INFO  Executor - Finished task 65.0 in stage 0.0 (TID 65). 2550 bytes result sent to driver
+2016-10-09 17:33:39,291 [dispatcher-event-loop-3] INFO  TaskSetManager - Starting task 83.0 in stage 0.0 (TID 83, localhost, partition 83,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:33:39,291 [Executor task launch worker-2] INFO  Executor - Running task 83.0 in stage 0.0 (TID 83)
+2016-10-09 17:33:39,291 [task-result-getter-3] INFO  TaskSetManager - Finished task 65.0 in stage 0.0 (TID 65) in 584504 ms on localhost (68/292)
+2016-10-09 17:33:39,293 [Executor task launch worker-2] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-10292-20141022065455539-00046-wbgrp-crawl067.us.archive.org-6443.warc.gz:0+1010783714
+2016-10-09 17:34:42,771 [Executor task launch worker-9] INFO  Executor - Finished task 81.0 in stage 0.0 (TID 81). 2550 bytes result sent to driver
+2016-10-09 17:34:42,773 [dispatcher-event-loop-4] INFO  TaskSetManager - Starting task 84.0 in stage 0.0 (TID 84, localhost, partition 84,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:34:42,773 [Executor task launch worker-9] INFO  Executor - Running task 84.0 in stage 0.0 (TID 84)
+2016-10-09 17:34:42,773 [task-result-getter-0] INFO  TaskSetManager - Finished task 81.0 in stage 0.0 (TID 81) in 92573 ms on localhost (69/292)
+2016-10-09 17:34:42,777 [Executor task launch worker-9] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-12902-20141015195105993-00005-wbgrp-crawl060.us.archive.org-6442.warc.gz:0+1020545514
+2016-10-09 17:35:15,145 [Executor task launch worker-7] INFO  Executor - Finished task 63.0 in stage 0.0 (TID 63). 2550 bytes result sent to driver
+2016-10-09 17:35:15,148 [dispatcher-event-loop-0] INFO  TaskSetManager - Starting task 85.0 in stage 0.0 (TID 85, localhost, partition 85,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:35:15,148 [Executor task launch worker-7] INFO  Executor - Running task 85.0 in stage 0.0 (TID 85)
+2016-10-09 17:35:15,153 [Executor task launch worker-7] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004034111586-00049-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1062731954
+2016-10-09 17:35:15,153 [task-result-getter-1] INFO  TaskSetManager - Finished task 63.0 in stage 0.0 (TID 63) in 733196 ms on localhost (70/292)
+2016-10-09 17:35:55,801 [Executor task launch worker-0] INFO  Executor - Finished task 67.0 in stage 0.0 (TID 67). 2550 bytes result sent to driver
+2016-10-09 17:35:55,803 [dispatcher-event-loop-11] INFO  TaskSetManager - Starting task 86.0 in stage 0.0 (TID 86, localhost, partition 86,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:35:55,803 [Executor task launch worker-0] INFO  Executor - Running task 86.0 in stage 0.0 (TID 86)
+2016-10-09 17:35:55,806 [task-result-getter-2] INFO  TaskSetManager - Finished task 67.0 in stage 0.0 (TID 67) in 633510 ms on localhost (71/292)
+2016-10-09 17:35:55,806 [Executor task launch worker-0] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014151227264-00001-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1006710289
+2016-10-09 17:36:08,301 [Executor task launch worker-10] INFO  Executor - Finished task 69.0 in stage 0.0 (TID 69). 2550 bytes result sent to driver
+2016-10-09 17:36:08,302 [dispatcher-event-loop-1] INFO  TaskSetManager - Starting task 87.0 in stage 0.0 (TID 87, localhost, partition 87,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:36:08,302 [Executor task launch worker-10] INFO  Executor - Running task 87.0 in stage 0.0 (TID 87)
+2016-10-09 17:36:08,305 [task-result-getter-3] INFO  TaskSetManager - Finished task 69.0 in stage 0.0 (TID 69) in 566505 ms on localhost (72/292)
+2016-10-09 17:36:08,306 [Executor task launch worker-10] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-12780-20141006155219498-00000-wbgrp-crawl060.us.archive.org-6440.warc.gz:0+53423907
+2016-10-09 17:36:21,860 [Executor task launch worker-10] INFO  Executor - Finished task 87.0 in stage 0.0 (TID 87). 2550 bytes result sent to driver
+2016-10-09 17:36:21,862 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 88.0 in stage 0.0 (TID 88, localhost, partition 88,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:36:21,863 [Executor task launch worker-10] INFO  Executor - Running task 88.0 in stage 0.0 (TID 88)
+2016-10-09 17:36:21,863 [task-result-getter-0] INFO  TaskSetManager - Finished task 87.0 in stage 0.0 (TID 87) in 13562 ms on localhost (73/292)
+2016-10-09 17:36:21,864 [Executor task launch worker-10] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028205115979-00040-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+2030719048
+2016-10-09 17:36:39,131 [Executor task launch worker-3] INFO  Executor - Finished task 68.0 in stage 0.0 (TID 68). 2550 bytes result sent to driver
+2016-10-09 17:36:39,133 [dispatcher-event-loop-11] INFO  TaskSetManager - Starting task 89.0 in stage 0.0 (TID 89, localhost, partition 89,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:36:39,133 [Executor task launch worker-3] INFO  Executor - Running task 89.0 in stage 0.0 (TID 89)
+2016-10-09 17:36:39,136 [task-result-getter-1] INFO  TaskSetManager - Finished task 68.0 in stage 0.0 (TID 68) in 670625 ms on localhost (74/292)
+2016-10-09 17:36:39,143 [Executor task launch worker-3] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004052420823-00059-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1022227388
+2016-10-09 17:37:38,500 [Executor task launch worker-13] INFO  Executor - Finished task 72.0 in stage 0.0 (TID 72). 2550 bytes result sent to driver
+2016-10-09 17:37:38,501 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 90.0 in stage 0.0 (TID 90, localhost, partition 90,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:37:38,503 [task-result-getter-2] INFO  TaskSetManager - Finished task 72.0 in stage 0.0 (TID 72) in 615554 ms on localhost (75/292)
+2016-10-09 17:37:38,508 [Executor task launch worker-17] INFO  Executor - Running task 90.0 in stage 0.0 (TID 90)
+2016-10-09 17:37:38,510 [Executor task launch worker-17] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028202035066-00036-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+2175877481
+2016-10-09 17:38:24,144 [Executor task launch worker-1] INFO  Executor - Finished task 73.0 in stage 0.0 (TID 73). 2550 bytes result sent to driver
+2016-10-09 17:38:24,146 [dispatcher-event-loop-5] INFO  TaskSetManager - Starting task 91.0 in stage 0.0 (TID 91, localhost, partition 91,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:38:24,146 [task-result-getter-3] INFO  TaskSetManager - Finished task 73.0 in stage 0.0 (TID 73) in 623016 ms on localhost (76/292)
+2016-10-09 17:38:24,146 [Executor task launch worker-1] INFO  Executor - Running task 91.0 in stage 0.0 (TID 91)
+2016-10-09 17:38:24,147 [Executor task launch worker-1] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-12902-20141015205308804-00014-wbgrp-crawl060.us.archive.org-6442.warc.gz:0+1400756399
+2016-10-09 17:39:06,394 [Executor task launch worker-11] INFO  Executor - Finished task 74.0 in stage 0.0 (TID 74). 2550 bytes result sent to driver
+2016-10-09 17:39:06,395 [dispatcher-event-loop-0] INFO  TaskSetManager - Starting task 92.0 in stage 0.0 (TID 92, localhost, partition 92,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:39:06,398 [Executor task launch worker-11] INFO  Executor - Running task 92.0 in stage 0.0 (TID 92)
+2016-10-09 17:39:06,398 [task-result-getter-0] INFO  TaskSetManager - Finished task 74.0 in stage 0.0 (TID 74) in 658809 ms on localhost (77/292)
+2016-10-09 17:39:06,400 [Executor task launch worker-11] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003214249888-00008-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1006040439
+2016-10-09 17:39:17,749 [Executor task launch worker-6] INFO  Executor - Finished task 70.0 in stage 0.0 (TID 70). 2550 bytes result sent to driver
+2016-10-09 17:39:17,750 [dispatcher-event-loop-7] INFO  TaskSetManager - Starting task 93.0 in stage 0.0 (TID 93, localhost, partition 93,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:39:17,751 [task-result-getter-1] INFO  TaskSetManager - Finished task 70.0 in stage 0.0 (TID 70) in 718060 ms on localhost (78/292)
+2016-10-09 17:39:17,751 [Executor task launch worker-6] INFO  Executor - Running task 93.0 in stage 0.0 (TID 93)
+2016-10-09 17:39:17,753 [Executor task launch worker-6] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-7050-20141014172730625-00024-wbgrp-crawl050.us.archive.org-6443.warc.gz:0+1009500505
+2016-10-09 17:41:01,196 [Executor task launch worker-16] INFO  Executor - Finished task 75.0 in stage 0.0 (TID 75). 2550 bytes result sent to driver
+2016-10-09 17:41:01,196 [dispatcher-event-loop-14] INFO  TaskSetManager - Starting task 94.0 in stage 0.0 (TID 94, localhost, partition 94,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:41:01,197 [Executor task launch worker-16] INFO  Executor - Running task 94.0 in stage 0.0 (TID 94)
+2016-10-09 17:41:01,208 [task-result-getter-2] INFO  TaskSetManager - Finished task 75.0 in stage 0.0 (TID 75) in 614460 ms on localhost (79/292)
+2016-10-09 17:41:01,208 [Executor task launch worker-16] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028215647190-00047-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1078641509
+2016-10-09 17:42:21,840 [Executor task launch worker-14] INFO  Executor - Finished task 79.0 in stage 0.0 (TID 79). 2550 bytes result sent to driver
+2016-10-09 17:42:21,843 [dispatcher-event-loop-1] INFO  TaskSetManager - Starting task 95.0 in stage 0.0 (TID 95, localhost, partition 95,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:42:21,843 [Executor task launch worker-14] INFO  Executor - Running task 95.0 in stage 0.0 (TID 95)
+2016-10-09 17:42:21,843 [task-result-getter-3] INFO  TaskSetManager - Finished task 79.0 in stage 0.0 (TID 79) in 594719 ms on localhost (80/292)
+2016-10-09 17:42:21,845 [Executor task launch worker-14] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003210129939-00001-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1028774264
+2016-10-09 17:43:09,308 [Executor task launch worker-5] INFO  Executor - Finished task 76.0 in stage 0.0 (TID 76). 2550 bytes result sent to driver
+2016-10-09 17:43:09,310 [dispatcher-event-loop-14] INFO  TaskSetManager - Starting task 96.0 in stage 0.0 (TID 96, localhost, partition 96,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:43:09,310 [Executor task launch worker-5] INFO  Executor - Running task 96.0 in stage 0.0 (TID 96)
+2016-10-09 17:43:09,311 [task-result-getter-0] INFO  TaskSetManager - Finished task 76.0 in stage 0.0 (TID 76) in 711828 ms on localhost (81/292)
+2016-10-09 17:43:09,312 [Executor task launch worker-5] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028171735359-00024-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1033567675
+2016-10-09 17:43:52,576 [Executor task launch worker-2] INFO  Executor - Finished task 83.0 in stage 0.0 (TID 83). 2550 bytes result sent to driver
+2016-10-09 17:43:52,581 [dispatcher-event-loop-9] INFO  TaskSetManager - Starting task 97.0 in stage 0.0 (TID 97, localhost, partition 97,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:43:52,581 [Executor task launch worker-2] INFO  Executor - Running task 97.0 in stage 0.0 (TID 97)
+2016-10-09 17:43:52,581 [task-result-getter-1] INFO  TaskSetManager - Finished task 83.0 in stage 0.0 (TID 83) in 613292 ms on localhost (82/292)
+2016-10-09 17:43:52,582 [Executor task launch worker-2] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141004004833601-00031-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1020026392
+2016-10-09 17:45:01,483 [Executor task launch worker-12] INFO  Executor - Finished task 82.0 in stage 0.0 (TID 82). 2550 bytes result sent to driver
+2016-10-09 17:45:01,485 [dispatcher-event-loop-10] INFO  TaskSetManager - Starting task 98.0 in stage 0.0 (TID 98, localhost, partition 98,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:45:01,485 [Executor task launch worker-12] INFO  Executor - Running task 98.0 in stage 0.0 (TID 98)
+2016-10-09 17:45:01,486 [Executor task launch worker-12] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028183627513-00032-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1031231810
+2016-10-09 17:45:01,485 [task-result-getter-2] INFO  TaskSetManager - Finished task 82.0 in stage 0.0 (TID 82) in 688686 ms on localhost (83/292)
+2016-10-09 17:45:29,893 [Executor task launch worker-9] INFO  Executor - Finished task 84.0 in stage 0.0 (TID 84). 2550 bytes result sent to driver
+2016-10-09 17:45:29,904 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 99.0 in stage 0.0 (TID 99, localhost, partition 99,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:45:29,904 [Executor task launch worker-9] INFO  Executor - Running task 99.0 in stage 0.0 (TID 99)
+2016-10-09 17:45:29,904 [task-result-getter-3] INFO  TaskSetManager - Finished task 84.0 in stage 0.0 (TID 84) in 647132 ms on localhost (84/292)
+2016-10-09 17:45:29,920 [Executor task launch worker-9] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-23908-20140715155151729-00000-wbgrp-crawl102.us.archive.org-6443.warc.gz:0+1000000119
+2016-10-09 17:46:09,967 [Executor task launch worker-7] INFO  Executor - Finished task 85.0 in stage 0.0 (TID 85). 2550 bytes result sent to driver
+2016-10-09 17:46:09,968 [dispatcher-event-loop-13] INFO  TaskSetManager - Starting task 100.0 in stage 0.0 (TID 100, localhost, partition 100,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:46:09,969 [Executor task launch worker-7] INFO  Executor - Running task 100.0 in stage 0.0 (TID 100)
+2016-10-09 17:46:09,971 [task-result-getter-0] INFO  TaskSetManager - Finished task 85.0 in stage 0.0 (TID 85) in 654824 ms on localhost (85/292)
+2016-10-09 17:46:09,971 [Executor task launch worker-7] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-32558-20141025095604735-00002-wbgrp-crawl101.us.archive.org-6441.warc.gz:0+1000012482
+2016-10-09 17:46:33,469 [Executor task launch worker-0] INFO  Executor - Finished task 86.0 in stage 0.0 (TID 86). 2550 bytes result sent to driver
+2016-10-09 17:46:33,470 [dispatcher-event-loop-8] INFO  TaskSetManager - Starting task 101.0 in stage 0.0 (TID 101, localhost, partition 101,PROCESS_LOCAL, 2349 bytes)
+2016-10-09 17:46:33,470 [Executor task launch worker-0] INFO  Executor - Running task 101.0 in stage 0.0 (TID 101)
+2016-10-09 17:46:33,471 [task-result-getter-1] INFO  TaskSetManager - Finished task 86.0 in stage 0.0 (TID 86) in 637669 ms on localhost (86/292)
+2016-10-09 17:46:33,472 [Executor task launch worker-0] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-14745-20141028142549832-00010-wbgrp-crawl066.us.archive.org-6442.warc.gz:0+1030285163
+2016-10-09 17:47:32,341 [Executor task launch worker-3] INFO  Executor - Finished task 89.0 in stage 0.0 (TID 89). 2550 bytes result sent to driver
+2016-10-09 17:47:32,343 [dispatcher-event-loop-2] INFO  TaskSetManager - Starting task 102.0 in stage 0.0 (TID 102, localhost, partition 102,PROCESS_LOCAL, 2348 bytes)
+2016-10-09 17:47:32,344 [Executor task launch worker-3] INFO  Executor - Running task 102.0 in stage 0.0 (TID 102)
+2016-10-09 17:47:32,352 [task-result-getter-2] INFO  TaskSetManager - Finished task 89.0 in stage 0.0 (TID 89) in 653220 ms on localhost (87/292)
+2016-10-09 17:47:32,354 [Executor task launch worker-3] INFO  NewHadoopRDD - Input split: file:/data/TORONTO_toronto_mayoral_election_2014/ARCHIVEIT-4707-NONE-4355-20141003213037535-00005-wbgrp-crawl068.us.archive.org-6440.warc.gz:0+1010750556
