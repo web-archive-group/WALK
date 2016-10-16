@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import math
 from matplotlib_venn import venn2, venn3
 import mca
 import matplotlib.pyplot as plt
@@ -116,8 +117,7 @@ class Compare:
         print (names)
         dd = self.unionize(collections)
         d = [] #create
-        e = []
-        #labels
+        e = [] #labels
         fs, cos, cont = 'Factor Score', 'Squared cosines', 'Contributions x 1000'
         #populate table with matches for actors (weblists)
         for y in collections:
@@ -127,6 +127,7 @@ class Compare:
         df = pd.DataFrame(d, index=names)       
         if self.REMOVE_SINGLES:
             df = df.loc[:, df.sum(0) >1 ]
+            df.fillna(False)
         #if self.var:
         #    df.loc[:,"SUFFIX"] = pd.Series(e, index=df.index)
         self.response = df.T
