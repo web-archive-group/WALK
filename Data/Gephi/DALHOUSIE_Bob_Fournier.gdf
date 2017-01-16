@@ -1,0 +1,16 @@
+nodedef> name VARCHAR
+campusmap.dal.ca
+libraries.dal.ca
+alumniapps.dal.ca
+dalhousie.blackboard.com
+dal.ca
+my.dal.ca
+directory.dal.ca
+edgedef> source VARCHAR, target VARCHAR, weight DOUBLE, timeint VARCHAR
+dal.ca,dal.ca,114,20150917
+dal.ca,directory.dal.ca,14,20150917
+dal.ca,my.dal.ca,12,20150917
+dal.ca,alumniapps.dal.ca,12,20150917
+dal.ca,campusmap.dal.ca,8,20150917
+dal.ca,dalhousie.blackboard.com,8,20150917
+dal.ca,libraries.dal.ca,7,20150917

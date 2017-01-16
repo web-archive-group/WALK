@@ -1,0 +1,6 @@
+nodedef> name VARCHAR
+apps.halifax.ca
+halifax.ca
+edgedef> source VARCHAR, target VARCHAR, weight DOUBLE, timeint VARCHAR
+halifax.ca,halifax.ca,320,20151113
+halifax.ca,apps.halifax.ca,21,20151113

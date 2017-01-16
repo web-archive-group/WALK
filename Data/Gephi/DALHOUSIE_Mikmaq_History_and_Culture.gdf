@@ -1,0 +1,18 @@
+nodedef> name VARCHAR
+collectionscanada.ca
+danielnpaul.com
+fernwoodpublishing.ca
+cbc.ca
+dickshovel.com
+en.wikipedia.org
+thechronicleherald.ca
+gov.ns.ca
+edgedef> source VARCHAR, target VARCHAR, weight DOUBLE, timeint VARCHAR
+danielnpaul.com,danielnpaul.com,6335,20161125
+danielnpaul.com,en.wikipedia.org,45,20161125
+danielnpaul.com,thechronicleherald.ca,8,20161125
+danielnpaul.com,gov.ns.ca,7,20161125
+danielnpaul.com,dickshovel.com,7,20161125
+danielnpaul.com,fernwoodpublishing.ca,7,20161125
+danielnpaul.com,cbc.ca,6,20161125
+danielnpaul.com,collectionscanada.ca,6,20161125

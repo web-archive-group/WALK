@@ -1,0 +1,2 @@
+nodedef> name VARCHAR
+edgedef> source VARCHAR, target VARCHAR, weight DOUBLE, timeint VARCHAR
